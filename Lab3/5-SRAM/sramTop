@@ -1,0 +1,98 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// File name: 
+//	sramTop.v
+//
+// Description:
+//	Tests pressureManager module in the pressureModule.v file
+//
+// Author:
+//	Nick Lopez
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+`include "sram.v"
+
+module testBench;
+	// connect the two modules
+	wire [3:0] 	pressureState;
+	wire 		pressureComp, depressureComp;
+	wire 		clk, reset, pressurize, depressurize;
+	
+	// declare an instance of the MyDesign module
+	pressureManager presMan(pressureComp, depressureComp, pressureState, clk, reset,
+							pressurize, depressurize);
+
+	// declare an instance of the Tester module
+	Tester myTester (clk, reset, pressurize, depressurize, pressureComp, 
+					depressureComp, pressureState);
+
+	// file specifications for gtkwave
+	initial
+	begin
+		// dump file is for dumping all the variables in a simulation
+		$dumpfile("pressureModule.vcd");
+		// dumps all the variables in module myDesign and below
+		// but not modules instantiated in myDesign into the dumpfile.
+		$dumpvars(1, presMan);
+	end
+endmodule
+
+module Tester (clk, reset, pressurize, depressurize, pressureComp, depressureComp, 
+				pressureState);
+	
+	output		clk, reset, pressurize, depressurize;
+	input 		pressureComp, depressureComp; 
+	input [3:0]	pressureState;
+	
+	reg 		clk, reset, pressurize, depressurize;
+
+	parameter stimDelay = 20;
+
+	initial // Response
+	begin
+	$display("\t pressureComp depressureComp pressureState \t clk reset pressurize depressurize \t Time ");
+	$monitor("\t\t %b \t\t %b \t %b \t\t %b \t %b \t %b \t %b", pressureComp, depressureComp, pressureState, clk, reset, pressurize, depressurize, $time );
+	end
+
+	always
+		#stimDelay clk = ~clk;
+	
+	initial // Stimulus
+	begin 
+	#stimDelay reset = 1; clk = 1;
+	#stimDelay reset = 0;
+	#stimDelay;
+	#stimDelay pressurize = 1; depressurize = 0;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay reset = 1;
+	#stimDelay;
+	#stimDelay reset = 0;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay depressurize = 1;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay pressurize = 0;	
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;
+	#stimDelay;	
+	#(60*stimDelay); // needed to see END of simulation
+	$finish; // finish simulation
+	end
+endmodule

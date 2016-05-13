@@ -1,0 +1,62 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_003D83C0 .scope module, "testBench" "testBench" 2 4;
+ .timescale 0 0;
+v003D34A8_0 .net "X", 1 0, v003D4768_0; 1 drivers
+v003D7FA8_0 .net "XandY", 1 0, L_003D47C0; 1 drivers
+v003D8000_0 .net "XorY", 1 0, L_003DEC08; 1 drivers
+v003D8058_0 .net "Y", 1 0, v005A1C88_0; 1 drivers
+S_003D9A08 .scope module, "myAndOr" "AndOr" 2 11, 3 1, S_003D83C0;
+ .timescale 0 0;
+L_003D47C0 .functor AND 2, v003D4768_0, v005A1C88_0, C4<11>, C4<11>;
+L_003DEC08 .functor OR 2, v003D4768_0, v005A1C88_0, C4<00>, C4<00>;
+v005A1CE0_0 .alias "A", 1 0, v003D34A8_0;
+v005A1D38_0 .alias "AandB", 1 0, v003D7FA8_0;
+v003D33F8_0 .alias "AorB", 1 0, v003D8000_0;
+v003D3450_0 .alias "B", 1 0, v003D8058_0;
+S_003D94B8 .scope module, "aTester" "Tester" 2 14, 2 26, S_003D83C0;
+ .timescale 0 0;
+P_005A2BDC .param/l "stimDelay" 2 32, +C4<010100>;
+v003D46B8_0 .alias "XandYin", 1 0, v003D7FA8_0;
+v003D4710_0 .alias "XorYin", 1 0, v003D8000_0;
+v003D4768_0 .var "xOut", 1 0;
+v005A1C88_0 .var "yOut", 1 0;
+    .scope S_003D94B8;
+T_0 ;
+    %vpi_call 2 36 "$display", "\011\011 xOut yOut \011 XandYin XorYin \011   Time ";
+    %vpi_call 2 37 "$monitor", "\011\011 %b\011 %b \011 %b \011 %b", v003D4768_0, v005A1C88_0, v003D46B8_0, v003D4710_0, $time;
+    %end;
+    .thread T_0;
+    .scope S_003D94B8;
+T_1 ;
+    %set/v v003D4768_0, 0, 2;
+    %movi 8, 2, 2;
+    %set/v v005A1C88_0, 8, 2;
+    %delay 20, 0;
+    %movi 8, 2, 2;
+    %set/v v003D4768_0, 8, 2;
+    %delay 20, 0;
+    %movi 8, 1, 2;
+    %set/v v005A1C88_0, 8, 2;
+    %delay 20, 0;
+    %set/v v003D4768_0, 1, 2;
+    %delay 40, 0;
+    %vpi_call 2 48 "$finish";
+    %end;
+    .thread T_1;
+    .scope S_003D83C0;
+T_2 ;
+    %vpi_call 2 20 "$dumpfile", "andOr0.vcd";
+    %vpi_call 2 21 "$dumpvars", 2'sb01, S_003D9A08;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "andorTop0.v";
+    "./andOr0.v";

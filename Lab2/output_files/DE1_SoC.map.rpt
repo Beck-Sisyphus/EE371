@@ -1,0 +1,431 @@
+Analysis & Synthesis report for DE1_SoC
+Thu Apr 28 11:05:12 2016
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |DE1_SoC|interlock:inter|ps
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: interlock:inter
+ 13. Port Connectivity Checks: "timer:wait5min"
+ 14. Port Connectivity Checks: "timer:depressurize"
+ 15. Port Connectivity Checks: "timer:pressurize"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Apr 28 11:05:12 2016           ;
+; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
+; Revision Name                   ; DE1_SoC                                         ;
+; Top-level Entity Name           ; DE1_SoC                                         ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 65                                              ;
+; Total pins                      ; 39                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; sourceCode/counters.v            ; yes             ; User Verilog HDL File  ; C:/Users/xiaoh3/Downloads/lab2/sourceCode/counters.v  ;         ;
+; sourceCode/timer.v               ; yes             ; User Verilog HDL File  ; C:/Users/xiaoh3/Downloads/lab2/sourceCode/timer.v     ;         ;
+; sourceCode/interlock.v           ; yes             ; User Verilog HDL File  ; C:/Users/xiaoh3/Downloads/lab2/sourceCode/interlock.v ;         ;
+; sourceCode/DE1_SoC.v             ; yes             ; User Verilog HDL File  ; C:/Users/xiaoh3/Downloads/lab2/sourceCode/DE1_SoC.v   ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 108            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 167            ;
+;     -- 7 input functions                    ; 4              ;
+;     -- 6 input functions                    ; 44             ;
+;     -- 5 input functions                    ; 30             ;
+;     -- 4 input functions                    ; 31             ;
+;     -- <=3 input functions                  ; 58             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 65             ;
+;                                             ;                ;
+; I/O pins                                    ; 39             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 40             ;
+; Total fan-out                               ; 906            ;
+; Average fan-out                             ; 2.92           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                               ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
+; |DE1_SoC                   ; 167 (26)          ; 65 (26)      ; 0                 ; 0          ; 39   ; 0            ; |DE1_SoC                    ; work         ;
+;    |display:disp|          ; 31 (31)           ; 14 (14)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|display:disp       ; work         ;
+;    |interlock:inter|       ; 96 (96)           ; 12 (12)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|interlock:inter    ; work         ;
+;    |timer:depressurize|    ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|timer:depressurize ; work         ;
+;    |timer:pressurize|      ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|timer:pressurize   ; work         ;
+;    |timer:wait5min|        ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|timer:wait5min     ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  User-Encoded
++----------------------------------------------------+
+; State Machine - |DE1_SoC|interlock:inter|ps        ;
++--------------------+-------+-------+-------+-------+
+; Name               ; ps~19 ; ps~18 ; ps~17 ; ps~16 ;
++--------------------+-------+-------+-------+-------+
+; ps.firstStep       ; 0     ; 0     ; 0     ; 0     ;
+; ps.highPressure    ; 0     ; 0     ; 1     ; 1     ;
+; ps.checkOuterOpen  ; 0     ; 0     ; 1     ; 0     ;
+; ps.checkOuterClose ; 0     ; 1     ; 0     ; 1     ;
+; ps.checkInnerClose ; 0     ; 1     ; 1     ; 1     ;
+; ps.outerOpen       ; 0     ; 1     ; 1     ; 0     ;
+; ps.innerOpen       ; 1     ; 0     ; 0     ; 1     ;
+; ps.pressurizeTimer ; 1     ; 0     ; 0     ; 0     ;
+; ps.evacuateTimer   ; 1     ; 0     ; 1     ; 1     ;
+; ps.waiting5min     ; 1     ; 0     ; 1     ; 0     ;
+; ps.closedInnerPort ; 1     ; 1     ; 0     ; 1     ;
+; ps.complete        ; 1     ; 1     ; 1     ; 0     ;
++--------------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; interlock:inter|status[1..3]          ; Merged with interlock:inter|status[0]  ;
+; timer:wait5min|count[3]               ; Stuck at GND due to stuck port data_in ;
+; timer:pressurize|count[3]             ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 5 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 65    ;
+; Number of registers using Synchronous Clear  ; 9     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |DE1_SoC|timer:wait5min|count[3]     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |DE1_SoC|timer:wait5min|count[2]     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |DE1_SoC|timer:pressurize|count[2]   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |DE1_SoC|timer:depressurize|count[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|display:disp|PorD           ;
+; 26:1               ; 6 bits    ; 102 LEs       ; 48 LEs               ; 54 LEs                 ; No         ; |DE1_SoC|interlock:inter|ps          ;
+; 26:1               ; 2 bits    ; 34 LEs        ; 10 LEs               ; 24 LEs                 ; No         ; |DE1_SoC|interlock:inter|ps          ;
+; 28:1               ; 2 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; No         ; |DE1_SoC|interlock:inter|ps          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interlock:inter ;
++-----------------+-------+------------------------------------+
+; Parameter Name  ; Value ; Type                               ;
++-----------------+-------+------------------------------------+
+; firstStep       ; 0001  ; Unsigned Binary                    ;
+; highPressure    ; 0010  ; Unsigned Binary                    ;
+; checkOuterOpen  ; 0011  ; Unsigned Binary                    ;
+; checkOuterClose ; 0100  ; Unsigned Binary                    ;
+; checkInnerClose ; 0110  ; Unsigned Binary                    ;
+; outerOpen       ; 0111  ; Unsigned Binary                    ;
+; innerOpen       ; 1000  ; Unsigned Binary                    ;
+; pressurizeTimer ; 1001  ; Unsigned Binary                    ;
+; evacuateTimer   ; 1010  ; Unsigned Binary                    ;
+; waiting5min     ; 1011  ; Unsigned Binary                    ;
+; closedInnerPort ; 1100  ; Unsigned Binary                    ;
+; complete        ; 1111  ; Unsigned Binary                    ;
++-----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "timer:wait5min"      ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; startCount[3] ; Input ; Info     ; Stuck at GND ;
+; startCount[2] ; Input ; Info     ; Stuck at VCC ;
+; startCount[1] ; Input ; Info     ; Stuck at GND ;
+; startCount[0] ; Input ; Info     ; Stuck at VCC ;
+; key           ; Input ; Info     ; Stuck at VCC ;
++---------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "timer:depressurize"     ;
++------------------+-------+----------+--------------+
+; Port             ; Type  ; Severity ; Details      ;
++------------------+-------+----------+--------------+
+; startCount[2..0] ; Input ; Info     ; Stuck at GND ;
+; startCount[3]    ; Input ; Info     ; Stuck at VCC ;
++------------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "timer:pressurize"       ;
++------------------+-------+----------+--------------+
+; Port             ; Type  ; Severity ; Details      ;
++------------------+-------+----------+--------------+
+; startCount[2..0] ; Input ; Info     ; Stuck at VCC ;
+; startCount[3]    ; Input ; Info     ; Stuck at GND ;
++------------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 65                          ;
+;     ENA               ; 1                           ;
+;     SCLR              ; 9                           ;
+;     SLD               ; 1                           ;
+;     plain             ; 54                          ;
+; arriav_lcell_comb     ; 167                         ;
+;     arith             ; 25                          ;
+;         1 data inputs ; 24                          ;
+;         2 data inputs ; 1                           ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 138                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 24                          ;
+;         4 data inputs ; 31                          ;
+;         5 data inputs ; 30                          ;
+;         6 data inputs ; 44                          ;
+; boundary_port         ; 39                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.77                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+    Info: Processing started: Thu Apr 28 11:05:02 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sourcecode/counters.v
+    Info (12023): Found entity 1: display File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/counters.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sourcecode/timer.v
+    Info (12023): Found entity 1: timer File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/timer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sourcecode/interlock.v
+    Info (12023): Found entity 1: interlock File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/interlock.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file sourcecode/de1_soc.v
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/DE1_SoC.v Line: 3
+Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
+Info (12128): Elaborating entity "interlock" for hierarchy "interlock:inter" File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/DE1_SoC.v Line: 31
+Info (12128): Elaborating entity "display" for hierarchy "display:disp" File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/DE1_SoC.v Line: 34
+Info (12128): Elaborating entity "timer" for hierarchy "timer:pressurize" File: C:/Users/xiaoh3/Downloads/lab2/sourceCode/DE1_SoC.v Line: 36
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/xiaoh3/Downloads/lab2/output_files/DE1_SoC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 210 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 171 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 905 megabytes
+    Info: Processing ended: Thu Apr 28 11:05:12 2016
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/xiaoh3/Downloads/lab2/output_files/DE1_SoC.map.smsg.
+
+

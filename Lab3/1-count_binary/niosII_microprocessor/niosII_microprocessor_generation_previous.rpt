@@ -1,0 +1,124 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory="U:\Mircoprocessor Pt. 1" --output-directory="U:\Mircoprocessor Pt. 1\niosII_microprocessor" --report-file="bsf:U:\Mircoprocessor Pt. 1\niosII_microprocessor\niosII_microprocessor.bsf" --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="U:\Mircoprocessor Pt. 1\niosII_microprocessor.qsys" --remove-qsys-generate-warning
+Progress: Loading Mircoprocessor Pt. 1/niosII_microprocessor.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 14.1]
+Progress: Parameterizing module led_pio
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding sys_clk_timer [altera_avalon_timer 14.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosII_microprocessor.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: niosII_microprocessor.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory="U:\Mircoprocessor Pt. 1" --output-directory="U:\Mircoprocessor Pt. 1\niosII_microprocessor\synthesis" --file-set=QUARTUS_SYNTH --report-file="html:U:\Mircoprocessor Pt. 1\niosII_microprocessor\niosII_microprocessor.html" --report-file="sopcinfo:U:\Mircoprocessor Pt. 1\niosII_microprocessor.sopcinfo" --report-file="cmp:U:\Mircoprocessor Pt. 1\niosII_microprocessor\niosII_microprocessor.cmp" --report-file="qip:U:\Mircoprocessor Pt. 1\niosII_microprocessor\synthesis\niosII_microprocessor.qip" --report-file="svd:U:\Mircoprocessor Pt. 1\niosII_microprocessor\synthesis\niosII_microprocessor.svd" --report-file="regmap:U:\Mircoprocessor Pt. 1\niosII_microprocessor\synthesis\niosII_microprocessor.regmap" --report-file="xml:U:\Mircoprocessor Pt. 1\niosII_microprocessor\niosII_microprocessor.xml" --report-file="debuginfo:U:\Mircoprocessor Pt. 1\niosII_microprocessor\synthesis\niosII_microprocessor.debuginfo" --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="U:\Mircoprocessor Pt. 1\niosII_microprocessor.qsys" --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading Mircoprocessor Pt. 1/niosII_microprocessor.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 14.1]
+Progress: Parameterizing module led_pio
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding sys_clk_timer [altera_avalon_timer 14.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosII_microprocessor.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: niosII_microprocessor.sysid: Time stamp will be automatically updated when this component is generated.
+Info: niosII_microprocessor: Generating niosII_microprocessor "niosII_microprocessor" for QUARTUS_SYNTH
+Info: cpu: "niosII_microprocessor" instantiated altera_nios2_gen2 "cpu"
+Info: jtag_uart: Starting RTL generation for module 'niosII_microprocessor_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosII_microprocessor_jtag_uart --dir=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0001_jtag_uart_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0001_jtag_uart_gen//niosII_microprocessor_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'niosII_microprocessor_jtag_uart'
+Info: jtag_uart: "niosII_microprocessor" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: led_pio: Starting RTL generation for module 'niosII_microprocessor_led_pio'
+Info: led_pio:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=niosII_microprocessor_led_pio --dir=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0002_led_pio_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0002_led_pio_gen//niosII_microprocessor_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'niosII_microprocessor_led_pio'
+Info: led_pio: "niosII_microprocessor" instantiated altera_avalon_pio "led_pio"
+Info: onchip_mem: Starting RTL generation for module 'niosII_microprocessor_onchip_mem'
+Info: onchip_mem:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosII_microprocessor_onchip_mem --dir=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0003_onchip_mem_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0003_onchip_mem_gen//niosII_microprocessor_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem: Done RTL generation for module 'niosII_microprocessor_onchip_mem'
+Info: onchip_mem: "niosII_microprocessor" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: sys_clk_timer: Starting RTL generation for module 'niosII_microprocessor_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec C:/altera/14.1/quartus/bin64//perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64//perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=niosII_microprocessor_sys_clk_timer --dir=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0004_sys_clk_timer_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0004_sys_clk_timer_gen//niosII_microprocessor_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer: Done RTL generation for module 'niosII_microprocessor_sys_clk_timer'
+Info: sys_clk_timer: "niosII_microprocessor" instantiated altera_avalon_timer "sys_clk_timer"
+Info: sysid: "niosII_microprocessor" instantiated altera_avalon_sysid_qsys "sysid"
+Info: mm_interconnect_0: "niosII_microprocessor" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosII_microprocessor" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosII_microprocessor" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'niosII_microprocessor_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=niosII_microprocessor_cpu_cpu --dir=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0008_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/bryanbed/AppData/Local/Temp/alt6839_5727786425547750.dir/0008_cpu_gen//niosII_microprocessor_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2016.02.08 10:41:27 (*) Starting Nios II generation
+Info: cpu: # 2016.02.08 10:41:27 (*)   Checking for plaintext license.
+Info: cpu: # 2016.02.08 10:41:29 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
+Info: cpu: # 2016.02.08 10:41:29 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2016.02.08 10:41:29 (*)   Plaintext license not found.
+Info: cpu: # 2016.02.08 10:41:29 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2016.02.08 10:41:30 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
+Info: cpu: # 2016.02.08 10:41:30 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2016.02.08 10:41:30 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2016.02.08 10:41:30 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2016.02.08 10:41:30 (*)   Creating all objects for CPU
+Info: cpu: # 2016.02.08 10:41:30 (*)     Testbench
+Info: cpu: # 2016.02.08 10:41:31 (*)     Instruction decoding
+Info: cpu: # 2016.02.08 10:41:31 (*)       Instruction fields
+Info: cpu: # 2016.02.08 10:41:31 (*)       Instruction decodes
+Info: cpu: # 2016.02.08 10:41:31 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2016.02.08 10:41:31 (*)       Instruction controls
+Info: cpu: # 2016.02.08 10:41:31 (*)     Pipeline frontend
+Info: cpu: # 2016.02.08 10:41:31 (*)     Pipeline backend
+Info: cpu: # 2016.02.08 10:41:33 (*)   Generating RTL from CPU objects
+Info: cpu: # 2016.02.08 10:41:36 (*)   Creating encrypted RTL
+Info: cpu: # 2016.02.08 10:41:36 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'niosII_microprocessor_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cpu_instruction_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_instruction_master_limiter"
+Info: Reusing file U:/Mircoprocessor Pt. 1/niosII_microprocessor/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file U:/Mircoprocessor Pt. 1/niosII_microprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file U:/Mircoprocessor Pt. 1/niosII_microprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file U:/Mircoprocessor Pt. 1/niosII_microprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: niosII_microprocessor: Done "niosII_microprocessor" with 29 modules, 47 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

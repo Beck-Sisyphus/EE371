@@ -1,0 +1,523 @@
+Archive member included to satisfy reference by file (symbol)
+
+../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+                              obj/default/hello_world_small.o (alt_getchar)
+../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+                              ../SRAM_bsp//obj/HAL/src/crt0.o (alt_load)
+../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+                              ../SRAM_bsp//obj/HAL/src/crt0.o (alt_main)
+../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+                              obj/default/hello_world_small.o (alt_putstr)
+../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o) (altera_avalon_jtag_uart_read)
+../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o) (altera_avalon_jtag_uart_write)
+../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o) (alt_fd_list)
+../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o) (strlen)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000008000 0x0000000000000020
+onchip_mem       0x0000000000008020 0x0000000000004fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../SRAM_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libstdc++.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2\libgcc.a
+START GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2\libgcc.a
+LOAD ../SRAM_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2\libgcc.a
+                0x0000000000008000                __alt_mem_onchip_mem = 0x8000
+
+.entry          0x0000000000008000       0x20
+ *(.entry)
+ .entry         0x0000000000008000       0x20 ../SRAM_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __reset
+                0x000000000000801c                _exit
+
+.exceptions     0x0000000000008020        0x0
+                0x0000000000008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x0000000000008020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000008020      0x42c
+                0x0000000000008020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008020       0x3c ../SRAM_bsp//obj/HAL/src/crt0.o
+                0x0000000000008020                _start
+ .text          0x000000000000805c        0x0 obj/default/hello_world_small.o
+ .text.startup  0x000000000000805c      0x128 obj/default/hello_world_small.o
+                0x000000000000805c                main
+ .text          0x0000000000008184       0x44 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+                0x0000000000008184                alt_getchar
+ .text          0x00000000000081c8       0xf8 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+                0x00000000000081c8                alt_load
+ .text          0x00000000000082c0       0x2c ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000082c0                alt_main
+ .text          0x00000000000082ec       0x38 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x00000000000082ec                alt_putstr
+ .text          0x0000000000008324       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000008324                alt_irq_init
+                0x0000000000008344                alt_sys_init
+ .text          0x0000000000008348       0x5c ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000000000008348                altera_avalon_jtag_uart_read
+ .text          0x00000000000083a4       0x34 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00000000000083a4                altera_avalon_jtag_uart_write
+ .text          0x00000000000083d8        0x4 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000083d8                alt_dcache_flush_all
+ .text          0x00000000000083dc        0x8 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00000000000083e4        0xc ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00000000000083e4                alt_icache_flush_all
+ .text          0x00000000000083f0        0x8 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00000000000083f0                altera_nios2_gen2_irq_init
+ .text          0x00000000000083f8       0x38 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00000000000083f8                alt_icache_flush
+ .text          0x0000000000008430        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000008430       0x1c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x0000000000008430                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x000000000000844c                PROVIDE (__etext, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (_etext, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000000000000844c                . = ALIGN (0x4)
+                0x000000000000844c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x000000000000844c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x000000000000844c                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x000000000000844c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x000000000000844c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x000000000000844c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x000000000000844c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000000000000844c                . = ALIGN (0x4)
+
+.rodata         0x000000000000844c       0x7c
+                0x000000000000844c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000000000000844c                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x000000000000844c       0x6d obj/default/hello_world_small.o
+                                         0x70 (size before relaxing)
+ *fill*         0x00000000000084b9        0x3 
+ .rodata.str1.4
+                0x00000000000084bc        0xc ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x00000000000084c8                . = ALIGN (0x4)
+                0x00000000000084c8                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000000000000844c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00000000000084c8       0x70 load address 0x0000000000008538
+                0x00000000000084c8                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00000000000084c8                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .data          0x00000000000084c8        0x0 obj/default/hello_world_small.o
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00000000000084c8        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00000000000084c8       0x58 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000084c8                alt_fd_list
+                0x00000000000084f8                alt_dev_null
+ .data          0x0000000000008520        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000008520        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000008520        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000008520        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x0000000000010520                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000000000010520                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000008520        0x4 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000008520                jtag_uart
+ .sdata         0x0000000000008524       0x14 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000008524                alt_max_fd
+                0x0000000000008528                alt_dev_list
+                0x0000000000008530                alt_fs_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000008538                . = ALIGN (0x4)
+                0x0000000000008538                _edata = ABSOLUTE (.)
+                0x0000000000008538                PROVIDE (edata, ABSOLUTE (.))
+                0x0000000000008538                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000008538                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00000000000085a8        0xc
+                0x00000000000085a8                __bss_start = ABSOLUTE (.)
+                0x00000000000085a8                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00000000000085a8                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00000000000085a8        0xc ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000085a8                alt_envp
+                0x00000000000085ac                alt_argv
+                0x00000000000085b0                alt_argc
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00000000000085b4                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00000000000085b4                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .bss           0x00000000000085b4        0x0 obj/default/hello_world_small.o
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x00000000000085b4        0x0 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x00000000000085b4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+                0x00000000000085b4                . = ALIGN (0x4)
+                0x00000000000085b4                __bss_end = ABSOLUTE (.)
+
+.onchip_mem     0x00000000000085b4        0x0
+                0x00000000000085b4                PROVIDE (_alt_partition_onchip_mem_start, ABSOLUTE (.))
+ *(.onchip_mem .onchip_mem. onchip_mem.*)
+                0x00000000000085b4                . = ALIGN (0x4)
+                0x00000000000085b4                PROVIDE (_alt_partition_onchip_mem_end, ABSOLUTE (.))
+                0x00000000000085b4                _end = ABSOLUTE (.)
+                0x00000000000085b4                end = ABSOLUTE (.)
+                0x00000000000085b4                __alt_stack_base = ABSOLUTE (.)
+                0x00000000000085b4                PROVIDE (_alt_partition_onchip_mem_load_addr, LOADADDR (.onchip_mem))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/hello_world_small.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000000       0x24 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x1e8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/hello_world_small.o
+ .debug_aranges
+                0x0000000000000048       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_aranges
+                0x0000000000000068       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000088       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000108       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000128       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000148       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x0000000000000168       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000188       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x1650
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x76 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000076      0x138 obj/default/hello_world_small.o
+ .debug_info    0x00000000000001ae      0x33b ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_info    0x00000000000004e9      0x1ba ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000000000006a3      0x17b ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000000000000081e      0x15d ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x000000000000097b      0x192 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000000b0d      0x1ad ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000000cba      0x190 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000000e4a       0x8b ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000000ed5      0x492 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000001367       0xc5 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x000000000000142c       0x8b ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x00000000000014b7       0xd7 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x000000000000158e       0xc2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x0000000000000000      0xab9
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012       0xc8 obj/default/hello_world_small.o
+ .debug_abbrev  0x00000000000000da      0x11f ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_abbrev  0x00000000000001f9       0xd8 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000000000002d1      0x120 ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000003f1       0xe2 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_abbrev  0x00000000000004d3      0x10e ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000000000005e1      0x102 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000000000006e3       0xd5 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000000000007b8       0x42 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000007fa       0xd9 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00000000000008d3       0x8a ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000000000000095d       0x42 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x000000000000099f       0x9b ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x0000000000000a3a       0x7f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x0000000000000000      0xb27
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x6c ../SRAM_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x000000000000006c       0xbe obj/default/hello_world_small.o
+ .debug_line    0x000000000000012a       0xb7 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_line    0x00000000000001e1       0xa6 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000287       0xbd ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000344       0xf5 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x0000000000000439      0x11a ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000000553       0xfb ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000000000000064e       0xf0 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000000000000073e       0x4e ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000000000000078c       0xee ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x000000000000087a       0x87 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000000901       0x50 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000000951       0x7d ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x00000000000009ce      0x159 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x234
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x40 obj/default/hello_world_small.o
+ .debug_frame   0x0000000000000040       0x2c ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_frame   0x000000000000006c       0x30 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x000000000000009c       0x2c ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000000c8       0x30 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_frame   0x00000000000000f8       0x3c ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000134       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x0000000000000154       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000000000000174       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000194       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000000000001b4       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000000000001d4       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x00000000000001f4       0x20 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x0000000000000214       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x0000000000000000      0x7d5
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xfd obj/default/hello_world_small.o
+                                        0x13b (size before relaxing)
+ .debug_str     0x00000000000000fd      0x135 ../SRAM_bsp/\libhal_bsp.a(alt_getchar.o)
+                                        0x21e (size before relaxing)
+ .debug_str     0x0000000000000232      0x11b ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x224 (size before relaxing)
+ .debug_str     0x000000000000034d       0x5e ../SRAM_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x19d (size before relaxing)
+ .debug_str     0x00000000000003ab       0x41 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+                                        0x17f (size before relaxing)
+ .debug_str     0x00000000000003ec       0xb9 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x244 (size before relaxing)
+ .debug_str     0x00000000000004a5       0x3d ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x207 (size before relaxing)
+ .debug_str     0x00000000000004e2       0x32 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x1fd (size before relaxing)
+ .debug_str     0x0000000000000514       0x1f ../SRAM_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x13d (size before relaxing)
+ .debug_str     0x0000000000000533      0x120 ../SRAM_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x2ed (size before relaxing)
+ .debug_str     0x0000000000000653       0x30 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x156 (size before relaxing)
+ .debug_str     0x0000000000000683       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x144 (size before relaxing)
+ .debug_str     0x00000000000006a3       0x1b ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                        0x143 (size before relaxing)
+ .debug_str     0x00000000000006be      0x117 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                        0x1bd (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x273
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x53 obj/default/hello_world_small.o
+ .debug_loc     0x0000000000000053       0x37 ../SRAM_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loc     0x000000000000008a       0x21 ../SRAM_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000000000000ab       0xcd ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x0000000000000178       0x8b ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000000000000203       0x52 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x0000000000000255       0x1e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x20 ../SRAM_bsp//obj/HAL/src/crt0.o
+                0x000000000000d000                __alt_data_end = 0xd000
+                0x000000000000d000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00000000000085b4                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00000000000085b4                PROVIDE (__alt_heap_start, end)
+                0x000000000000d000                PROVIDE (__alt_heap_limit, 0xd000)
+OUTPUT(SRAM.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000       0xb8
+ .debug_ranges  0x0000000000000000       0x20 ../SRAM_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x10 obj/default/hello_world_small.o
+ .debug_ranges  0x0000000000000030       0x48 ../SRAM_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000078       0x20 ../SRAM_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x0000000000000098       0x10 ../SRAM_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_ranges  0x00000000000000a8       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)

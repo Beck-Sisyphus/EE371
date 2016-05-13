@@ -1,0 +1,9 @@
+03:11:05 **** Incremental Build of configuration Nios II for project lights_and_switches_comp ****
+make all 
+Info: Building ../lights_and_switches_comp_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lights_and_switches_comp_bsp/
+[BSP build complete]
+[lights_and_switches_comp build complete]
+
+03:11:22 Build Finished (took 16s.472ms)
+

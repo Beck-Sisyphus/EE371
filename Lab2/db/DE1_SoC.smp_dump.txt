@@ -1,0 +1,15 @@
+
+State Machine - |DE1_SoC|interlock:inter|ps
+Name ps~19 ps~18 ps~17 ps~16 
+ps.firstStep 0 0 0 0 
+ps.highPressure 0 0 1 1 
+ps.checkOuterOpen 0 0 1 0 
+ps.checkOuterClose 0 1 0 1 
+ps.checkInnerClose 0 1 1 1 
+ps.outerOpen 0 1 1 0 
+ps.innerOpen 1 0 0 1 
+ps.pressurizeTimer 1 0 0 0 
+ps.evacuateTimer 1 0 1 1 
+ps.waiting5min 1 0 1 0 
+ps.closedInnerPort 1 1 0 1 
+ps.complete 1 1 1 0 

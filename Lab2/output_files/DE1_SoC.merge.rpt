@@ -1,0 +1,412 @@
+Partition Merge report for DE1_SoC
+Mon Apr 25 16:47:13 2016
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge Messages
+  8. Partition Merge Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Mon Apr 25 16:47:13 2016           ;
+; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
+; Revision Name                   ; DE1_SoC                                         ;
+; Top-level Entity Name           ; DE1_SoC                                         ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; 96 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 52                                              ;
+; Total pins                      ; 53 / 457 ( 12 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; hard_block:auto_generated_inst ; Auto-generated ; Post-Fit          ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                 ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 96 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;                                             ;                       ;                                ;
+; Combinational ALUT usage for logic          ; 171                   ; 0                              ;
+;     -- 7 input functions                    ; 8                     ; 0                              ;
+;     -- 6 input functions                    ; 63                    ; 0                              ;
+;     -- 5 input functions                    ; 30                    ; 0                              ;
+;     -- 4 input functions                    ; 35                    ; 0                              ;
+;     -- <=3 input functions                  ; 35                    ; 0                              ;
+; Memory ALUT usage                           ; 0                     ; 0                              ;
+;     -- 64-address deep                      ; 0                     ; 0                              ;
+;     -- 32-address deep                      ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Dedicated logic registers                   ; 52 / 128280 ( < 1 % ) ; 0 / 128280 ( 0 % )             ;
+;                                             ;                       ;                                ;
+;                                             ;                       ;                                ;
+; I/O pins                                    ; 53                    ; 0                              ;
+; I/O registers                               ; 0                     ; 0                              ;
+; Total block memory bits                     ; 0                     ; 0                              ;
+; Total block memory implementation bits      ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Connections                                 ;                       ;                                ;
+;     -- Input Connections                    ; 0                     ; 0                              ;
+;     -- Registered Input Connections         ; 0                     ; 0                              ;
+;     -- Output Connections                   ; 0                     ; 0                              ;
+;     -- Registered Output Connections        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Internal Connections                        ;                       ;                                ;
+;     -- Total Connections                    ; 979                   ; 0                              ;
+;     -- Registered Connections               ; 423                   ; 0                              ;
+;                                             ;                       ;                                ;
+; External Connections                        ;                       ;                                ;
+;     -- Top                                  ; 0                     ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Partition Interface                         ;                       ;                                ;
+;     -- Input Ports                          ; 15                    ; 0                              ;
+;     -- Output Ports                         ; 38                    ; 0                              ;
+;     -- Bidir Ports                          ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Registered Ports                            ;                       ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Port Connectivity                           ;                       ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
++---------------------------------------------+-----------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                              ;
++------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; Name                   ; Partition ; Type          ; Location           ; Status                                      ;
++------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; CLOCK_50               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- CLOCK_50        ; Top       ; Input Pad     ; IOPAD_X32_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- CLOCK_50~input  ; Top       ; Input Buffer  ; IOIBUF_X32_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[0]         ; Top       ; Output Pad    ; IOPAD_X89_Y8_N37   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[0]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y8_N39  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[1]         ; Top       ; Output Pad    ; IOPAD_X89_Y11_N77  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[1]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y11_N79 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[2]         ; Top       ; Output Pad    ; IOPAD_X89_Y11_N94  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[2]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y11_N96 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[3]         ; Top       ; Output Pad    ; IOPAD_X89_Y4_N77   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[3]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y4_N79  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[4]         ; Top       ; Output Pad    ; IOPAD_X89_Y13_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[4]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N56 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[5]         ; Top       ; Output Pad    ; IOPAD_X89_Y13_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[5]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N39 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX0[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX0[6]         ; Top       ; Output Pad    ; IOPAD_X89_Y4_N94   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX0[6]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y4_N96  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[0]         ; Top       ; Output Pad    ; IOPAD_X89_Y6_N37   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[0]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N39  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[1]         ; Top       ; Output Pad    ; IOPAD_X89_Y6_N54   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[1]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N56  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[2]         ; Top       ; Output Pad    ; IOPAD_X89_Y16_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[2]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y16_N39 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[3]         ; Top       ; Output Pad    ; IOPAD_X89_Y16_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[3]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y16_N56 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[4]         ; Top       ; Output Pad    ; IOPAD_X89_Y15_N37  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[4]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y15_N39 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[5]         ; Top       ; Output Pad    ; IOPAD_X89_Y15_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[5]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y15_N56 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX1[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX1[6]         ; Top       ; Output Pad    ; IOPAD_X89_Y8_N54   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX1[6]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y8_N56  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[0]         ; Top       ; Output Pad    ; IOPAD_X89_Y11_N43  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[0]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y11_N45 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[1]         ; Top       ; Output Pad    ; IOPAD_X89_Y13_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[1]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[2]         ; Top       ; Output Pad    ; IOPAD_X89_Y13_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[2]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y13_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[3]         ; Top       ; Output Pad    ; IOPAD_X89_Y8_N20   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[3]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y8_N22  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[4]         ; Top       ; Output Pad    ; IOPAD_X89_Y15_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[4]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y15_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[5]         ; Top       ; Output Pad    ; IOPAD_X89_Y15_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[5]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y15_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX4[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX4[6]         ; Top       ; Output Pad    ; IOPAD_X89_Y20_N43  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX4[6]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y20_N45 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[0]         ; Top       ; Output Pad    ; IOPAD_X89_Y20_N60  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[0]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y20_N62 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[1]         ; Top       ; Output Pad    ; IOPAD_X89_Y21_N54  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[1]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y21_N56 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[2]         ; Top       ; Output Pad    ; IOPAD_X89_Y25_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[2]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y25_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[3]         ; Top       ; Output Pad    ; IOPAD_X89_Y23_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[3]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y23_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[4]         ; Top       ; Output Pad    ; IOPAD_X89_Y9_N54   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[4]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y9_N56  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[5]         ; Top       ; Output Pad    ; IOPAD_X89_Y23_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[5]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y23_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; HEX5[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- HEX5[6]         ; Top       ; Output Pad    ; IOPAD_X89_Y9_N37   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- HEX5[6]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y9_N39  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; KEY[0]                 ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[0]          ; Top       ; Input Pad     ; IOPAD_X36_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[0]~input    ; Top       ; Input Buffer  ; IOIBUF_X36_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; KEY[1]                 ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[1]          ; Top       ; Input Pad     ; IOPAD_X36_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[1]~input    ; Top       ; Input Buffer  ; IOIBUF_X36_Y0_N18  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; KEY[2]                 ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[2]          ; Top       ; Input Pad     ; IOPAD_X40_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[2]~input    ; Top       ; Input Buffer  ; IOIBUF_X40_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; KEY[3]                 ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- KEY[3]          ; Top       ; Input Pad     ; IOPAD_X40_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- KEY[3]~input    ; Top       ; Input Buffer  ; IOIBUF_X40_Y0_N18  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[0]         ; Top       ; Output Pad    ; IOPAD_X52_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[0]~output  ; Top       ; Output Buffer ; IOOBUF_X52_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[1]         ; Top       ; Output Pad    ; IOPAD_X52_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[1]~output  ; Top       ; Output Buffer ; IOOBUF_X52_Y0_N19  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[2]         ; Top       ; Output Pad    ; IOPAD_X60_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[2]~output  ; Top       ; Output Buffer ; IOOBUF_X60_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[3]         ; Top       ; Output Pad    ; IOPAD_X80_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[3]~output  ; Top       ; Output Buffer ; IOOBUF_X80_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[4]         ; Top       ; Output Pad    ; IOPAD_X60_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[4]~output  ; Top       ; Output Buffer ; IOOBUF_X60_Y0_N19  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[5]         ; Top       ; Output Pad    ; IOPAD_X80_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[5]~output  ; Top       ; Output Buffer ; IOOBUF_X80_Y0_N19  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[6]         ; Top       ; Output Pad    ; IOPAD_X84_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[6]~output  ; Top       ; Output Buffer ; IOOBUF_X84_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[7]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[7]         ; Top       ; Output Pad    ; IOPAD_X89_Y6_N3    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[7]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N5   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[8]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[8]         ; Top       ; Output Pad    ; IOPAD_X89_Y8_N3    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[8]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y8_N5   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; LEDR[9]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- LEDR[9]         ; Top       ; Output Pad    ; IOPAD_X89_Y6_N20   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[9]~output  ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N22  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[0]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[0]           ; Top       ; Input Pad     ; IOPAD_X12_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[0]~input     ; Top       ; Input Buffer  ; IOIBUF_X12_Y0_N18  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[1]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[1]           ; Top       ; Input Pad     ; IOPAD_X16_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[1]~input     ; Top       ; Input Buffer  ; IOIBUF_X16_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[2]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[2]           ; Top       ; Input Pad     ; IOPAD_X8_Y0_N34    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[2]~input     ; Top       ; Input Buffer  ; IOIBUF_X8_Y0_N35   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[3]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[3]           ; Top       ; Input Pad     ; IOPAD_X4_Y0_N51    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[3]~input     ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N52   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[4]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[4]           ; Top       ; Input Pad     ; IOPAD_X2_Y0_N40    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[4]~input     ; Top       ; Input Buffer  ; IOIBUF_X2_Y0_N41   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[5]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[5]           ; Top       ; Input Pad     ; IOPAD_X16_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[5]~input     ; Top       ; Input Buffer  ; IOIBUF_X16_Y0_N18  ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[6]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[6]           ; Top       ; Input Pad     ; IOPAD_X4_Y0_N34    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[6]~input     ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N35   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[7]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[7]           ; Top       ; Input Pad     ; IOPAD_X4_Y0_N0     ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[7]~input     ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N1    ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[8]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[8]           ; Top       ; Input Pad     ; IOPAD_X4_Y0_N17    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[8]~input     ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N18   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; SW[9]                  ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SW[9]           ; Top       ; Input Pad     ; IOPAD_X2_Y0_N57    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[9]~input     ; Top       ; Input Buffer  ; IOIBUF_X2_Y0_N58   ; Preserved from Post-Fit or Imported Netlist ;
+;                        ;           ;               ;                    ;                                             ;
+; ~QUARTUS_CREATED_GND~0 ; Top       ; Output Port   ; n/a                ;                                             ;
+;                        ;           ;               ;                    ;                                             ;
++------------------------+-----------+---------------+--------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                              ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimate of Logic utilization (ALMs needed) ; 132                   ;
+;                                             ;                       ;
+; Combinational ALUT usage for logic          ; 171                   ;
+;     -- 7 input functions                    ; 8                     ;
+;     -- 6 input functions                    ; 63                    ;
+;     -- 5 input functions                    ; 30                    ;
+;     -- 4 input functions                    ; 35                    ;
+;     -- <=3 input functions                  ; 35                    ;
+;                                             ;                       ;
+; Dedicated logic registers                   ; 52                    ;
+;                                             ;                       ;
+; I/O pins                                    ; 53                    ;
+;                                             ;                       ;
+; Total DSP Blocks                            ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; interlock:inter|ps~25 ;
+; Maximum fan-out                             ; 64                    ;
+; Total fan-out                               ; 979                   ;
+; Average fan-out                             ; 2.92                  ;
++---------------------------------------------+-----------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+    Info: Processing started: Mon Apr 25 16:47:12 2016
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC --merge=on
+Info (35006): Using previously generated Fitter netlist for partition "Top"
+Info (35002): Resolved and merged 1 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 192 logic cells
+Info (144001): Generated suppressed messages file C:/Users/pshfls/Downloads/Lab2/output_files/DE1_SoC.merge.smsg
+Info: Quartus Prime Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 979 megabytes
+    Info: Processing ended: Mon Apr 25 16:47:13 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------+
+; Partition Merge Suppressed Messages ;
++-------------------------------------+
+The suppressed messages can be found in C:/Users/pshfls/Downloads/Lab2/output_files/DE1_SoC.merge.smsg.
+
+

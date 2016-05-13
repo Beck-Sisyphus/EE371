@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455007864182
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007866722
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007867871
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455007868084
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455007869522
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455007869727
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455007880185
+error,log,,,"Downloading ELF Process failed",1455007880190
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007880202
+error,log,,,"Unhandled event loop exception",1455007880279
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007883589
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455007885230
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007890776
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007891688
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455007891870
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455007893034
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455007893242
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455007903528
+error,log,,,"Downloading ELF Process failed",1455007903533
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007903546
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007910883
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455007939171
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455008025837
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455008030185
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455008031281
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455008034470
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455008035379
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.debug",1455008035573
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455008036874
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455008037041
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 8",1455008038641
+error,log,,,"Downloading ELF Process failed",1455008038650
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455008038672
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009600022
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009601576
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009603209
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009604669
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009618099
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009629176
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455009632212
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009633580
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009640172
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009640806
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009645983
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009646882
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455009647085
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455009648311
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455009648505
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455009658705
+error,log,,,"Downloading ELF Process failed",1455009658716
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009658734
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009659968
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009662834
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009665552
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009666483
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.debug",1455009666672
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455009667704
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455009667888
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455009674505
+error,log,,,"Downloading ELF Process failed",1455009674514
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009674538
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009676296
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009678364
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009683055
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009683924
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.debug",1455009684134
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455009685330
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455009685537
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455009692210
+error,log,,,"Downloading ELF Process failed",1455009692219
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009692239
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009697742
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009699104
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009701976
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009702893
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.debug",1455009703073
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455009704281
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455009704464
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455009711032
+error,log,,,"Downloading ELF Process failed",1455009711041
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009711068
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009779059
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009780137
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009835059
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455009879300
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009889341
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009890257
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455009890441
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455009891632
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455009891922
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455009902630
+error,log,,,"Downloading ELF Process failed",1455009902640
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455009902663
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010225093
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010231118
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010243916
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010244989
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010247082
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010464942
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010471127
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010488346
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010498299
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010524558
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010525902
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010534083
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010536247
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010536543
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010539200
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010544807
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010549170
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010562707
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010563615
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455010563828
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010563882
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010566950
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455010568712
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455010568937
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455010579426
+error,log,,,"Downloading ELF Process failed",1455010579436
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010579458
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010581830
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010582814
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010592998
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010593160
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010593173
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455010596650
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.TaskList",1455010597685
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455010598269
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010602057
+started,bundle,org.eclipse.ui.browser,3.3.101.v20111019-1723,"org.eclipse.ui.browser",1455010603307
+opened,editor,org.eclipse.ui.browser,3.3.101.v20111019-1723,"org.eclipse.ui.browser.editor",1455010603415
+activated,editor,org.eclipse.ui.browser,3.3.101.v20111019-1723,"org.eclipse.ui.browser.editor",1455010603436
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010631439
+closed,editor,org.eclipse.ui.browser,3.3.101.v20111019-1723,"org.eclipse.ui.browser.editor",1455010631440
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010634716
+executed,command,com.altera.sbtgui.project,14.0.0.200,"com.altera.sbtgui.project.commands.bspEditor",1455010659595
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010659866
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010667399
+executed,command,com.altera.sbtgui.project,14.0.0.200,"com.altera.sbtgui.project.commands.bspEditor",1455010672091
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010672359
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010763385
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010847259
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010892629
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455010896746
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010899730
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010917249
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455010961976
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010977872
+started,bundle,org.eclipse.core.databinding,1.4.0.I20110111-0800,"org.eclipse.core.databinding",1455010980643
+started,bundle,org.eclipse.core.databinding.property,1.4.0.I20110222-0800,"org.eclipse.core.databinding.property",1455010980656
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455010993594
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.properties",1455010993607
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011004889
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011035762
+executed,command,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui.commands.OpenRunConfigurations",1455011035778
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011133430
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011354031
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011362934
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011365144
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011372832
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011378401
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011381038
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011385830
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011389239
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011397462
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011402232
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011409520
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011413622
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455011414775
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011419522
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011424054
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011424945
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011427139
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011427731
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011588327
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011592056
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011658678
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011659975
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011663226
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011664307
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011672106
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011673190
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455011673681
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011673768
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011675995
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455011678738
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455011679266
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455011690363
+error,log,,,"Downloading ELF Process failed",1455011690374
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011690399
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011707488
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011827521
+executed,command,com.altera.sbtgui.project,14.0.0.200,"com.altera.sbtgui.project.commands.bspEditor",1455011831898
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011832167
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011871125
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011877573
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1455011883805
+executed,command,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.edit.text.c.toggle.comment",1455011903462
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011912281
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011913552
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1455011914429
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011916219
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011918142
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011918974
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011919813
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011928436
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011928679
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011929457
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011929701
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011930555
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011930832
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011931989
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011932277
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011933411
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011933675
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1455011938991
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1455011941273
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011952704
+executed,command,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.edit.text.c.toggle.comment",1455011956508
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1455011958610
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011968488
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011970833
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011972301
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1455011975492
+executed,command,,,"AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.cdt.internal.ui.text.correction.CSelectRulerAction",1455011976073
+executed,command,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.edit.text.c.toggle.comment",1455011983647
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1455011986361
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455011987731
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011995432
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455011997268
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012016820
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012022523
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012026901
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012027832
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455012028101
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455012029480
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455012029768
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455012040349
+error,log,,,"Downloading ELF Process failed",1455012040359
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012040387
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012043090
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1455012044316
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012052492
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012053389
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1455012053571
+activated,view,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1455012054807
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1455012055060
+error,log,,,"Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/altera/14.0/quartus/qdesigns/lights_and_switches_comp/software/lights_and_switches_comp/lights_and_switches_comp.elf] return code: 4, 'other error'",1455012065365
+error,log,,,"Downloading ELF Process failed",1455012065374
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1455012065394

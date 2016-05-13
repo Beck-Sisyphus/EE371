@@ -1,0 +1,32 @@
+03:09:26 **** Incremental Build of configuration Nios II for project lights_and_switches_comp ****
+make all 
+Info: Building ../lights_and_switches_comp_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lights_and_switches_comp_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lights_and_switches_comp_bsp//HAL/inc -I../lights_and_switches_comp_bsp/ -I../lights_and_switches_comp_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:91:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Enter 'G' to begin...");
+  ^
+hello_world_small.c:91:2: warning: incompatible implicit declaration of built-in function 'printf'
+Info: Linking lights_and_switches_comp.elf
+nios2-elf-g++  -T'../lights_and_switches_comp_bsp//linker.x' -msys-crt0='../lights_and_switches_comp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lights_and_switches_comp_bsp/  -msmallc  -Wl,-Map=lights_and_switches_comp.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o lights_and_switches_comp.elf obj/default/hello_world_small.o -lm 
+nios2-elf-insert lights_and_switches_comp.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/371_Lab_3/lights_and_switches_comp" --sopcinfo E:/371_Lab_3/lights_and_switches_comp/software/lights_and_switches_comp_bsp/../../nios_system.sopcinfo
+Info: (lights_and_switches_comp.elf) 3688 Bytes program size (code + initialized data).
+Info:                                60 Bytes free for stack + heap.
+Info: Creating lights_and_switches_comp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lights_and_switches_comp.elf >lights_and_switches_comp.objdump
+[lights_and_switches_comp build complete]
+03:10:50 **** Build of configuration Nios II for project lights_and_switches_comp ****
+make all 
+Info: Building ../lights_and_switches_comp_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lights_and_switches_comp_bsp/
+[BSP build complete]
+[lights_and_switches_comp build complete]
+03:11:05 **** Incremental Build of configuration Nios II for project lights_and_switches_comp ****
+make all 
+Info: Building ../lights_and_switches_comp_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lights_and_switches_comp_bsp/
+[BSP build complete]
+[lights_and_switches_comp build complete]

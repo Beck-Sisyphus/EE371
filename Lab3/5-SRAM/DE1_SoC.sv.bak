@@ -1,0 +1,11 @@
+	module DE1_SoC(CLOCK_50, KEY, SW, LEDR);
+		input CLOCK_50;
+		input KEY[4:0];
+		input SW[9:0];
+		output reg LEDR[9:0];
+	
+   niosII_microprocessor u0 (CLOCK_50, SW[9], LEDR[9:0]);
+	 
+	endmodule
+	
+	

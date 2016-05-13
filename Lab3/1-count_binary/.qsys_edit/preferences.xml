@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="63" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library,Library/Basic Functions,Project" />
+ <window width="1920" height="1398" x="195" y="0" />
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="471" />
+   <clocksource preferredWidth="469" />
+   <frequency preferredWidth="453" />
+  </columns>
+ </clocktable>
+ <generation path="niosII_microprocessor" simulation="NONE" block_symbol_file="1" />
+ <hdlexample language="VERILOG" />
+</preferences>

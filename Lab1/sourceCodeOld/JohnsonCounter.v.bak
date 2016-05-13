@@ -1,0 +1,12 @@
+module JohnsonCounter(clk,rst_n, out);
+	input clk, rst_n;
+	output [3:0] out;
+	wire [3:0] outBar
+always @(*)
+begin
+	DFlipFlop d0 (out[0], outBar[0], outBar[3], clk, rst_n);
+	DFlipFlop d1 (out[1], outBar[1], out[0], clk, rst_n);
+	DFlipFlop d2 (out[2], outBar[2], out[1], clk, rst_n);
+	DFlipFlop d3 (out[3], outBar[3], out[2], clk, rst_n);
+end
+endmodule

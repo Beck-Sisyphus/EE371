@@ -1,0 +1,15 @@
+// EE 471 Lab 1,  Beck Pang
+module DE1_SoC (CLOCK_50, LEDR, SW);
+	input 		 CLOCK_50;  // connect to system 50 MHz clock
+	output [9:0] LEDR;
+	input  [9:0] SW;
+
+	reg [31:0] tBase;		// system time base
+	parameter speed = 20;
+	always @(posedge CLOCK_50) 
+		tBase <= tBase + 1'b1;
+
+	
+	rippleDown dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
+	
+endmodule

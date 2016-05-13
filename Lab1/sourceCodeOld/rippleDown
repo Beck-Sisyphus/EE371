@@ -1,0 +1,188 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0088D4F8 .scope module, "rippleDown_testBench" "rippleDown_testBench" 2 8;
+ .timescale 0 0;
+v007491C0_0 .net "clk", 0 0, v008899F0_0; 1 drivers
+RS_00724004 .resolv tri, L_00748D48, L_00748DF8, L_0074A370, L_00749FA8;
+v00748CF0_0 .net8 "out", 3 0, RS_00724004; 4 drivers
+v00749218_0 .net "rst_n", 0 0, v00889B98_0; 1 drivers
+S_0088D580 .scope module, "myCounter" "rippleDown" 2 15, 3 6, S_0088D4F8;
+ .timescale 0 0;
+v00749378_0 .alias "clk", 0 0, v007491C0_0;
+v00748C98_0 .alias "out", 3 0, v00748CF0_0;
+RS_0072419C .resolv tri, L_00749270, L_00749F50, L_0074A1B8, L_0074A160;
+v00749110_0 .net8 "outBar", 3 0, RS_0072419C; 4 drivers
+v00749168_0 .alias "rst_n", 0 0, v00749218_0;
+L_00748D48 .part/pv v00749060_0, 0, 1, 4;
+L_00749270 .part/pv L_008884D0, 0, 1, 4;
+L_00748DA0 .part RS_0072419C, 0, 1;
+L_00748DF8 .part/pv v00748F58_0, 1, 1, 4;
+L_00749F50 .part/pv L_00888540, 1, 1, 4;
+L_0074A108 .part RS_0072419C, 1, 1;
+L_0074A000 .part RS_00724004, 0, 1;
+L_0074A370 .part/pv v008842D0_0, 2, 1, 4;
+L_0074A1B8 .part/pv L_00888508, 2, 1, 4;
+L_0074A3C8 .part RS_0072419C, 2, 1;
+L_0074A210 .part RS_00724004, 1, 1;
+L_00749FA8 .part/pv v008852C8_0, 3, 1, 4;
+L_0074A160 .part/pv L_00888380, 3, 1, 4;
+L_0074A2C0 .part RS_0072419C, 3, 1;
+L_0074A058 .part RS_00724004, 2, 1;
+S_0088D938 .scope module, "d0" "DFlipFlop" 3 12, 4 1, S_0088D580;
+ .timescale 0 0;
+L_008884D0 .functor NOT 1, v00749060_0, C4<0>, C4<0>, C4<0>;
+v00749008_0 .net "D", 0 0, L_00748DA0; 1 drivers
+v00748E50_0 .alias "clk", 0 0, v007491C0_0;
+v00749060_0 .var "q", 0 0;
+v007492C8_0 .net "qBar", 0 0, L_008884D0; 1 drivers
+v007490B8_0 .alias "rst", 0 0, v00749218_0;
+E_00888AC8/0 .event negedge, v00889B98_0;
+E_00888AC8/1 .event posedge, v008899F0_0;
+E_00888AC8 .event/or E_00888AC8/0, E_00888AC8/1;
+S_0088D690 .scope module, "d1" "DFlipFlop" 3 13, 4 1, S_0088D580;
+ .timescale 0 0;
+L_00888540 .functor NOT 1, v00748F58_0, C4<0>, C4<0>, C4<0>;
+v00749320_0 .net "D", 0 0, L_0074A108; 1 drivers
+v00748EA8_0 .net "clk", 0 0, L_0074A000; 1 drivers
+v00748F58_0 .var "q", 0 0;
+v00748C40_0 .net "qBar", 0 0, L_00888540; 1 drivers
+v00748FB0_0 .alias "rst", 0 0, v00749218_0;
+E_00888A28/0 .event negedge, v00889B98_0;
+E_00888A28/1 .event posedge, v00748EA8_0;
+E_00888A28 .event/or E_00888A28/0, E_00888A28/1;
+S_0088D8B0 .scope module, "d2" "DFlipFlop" 3 14, 4 1, S_0088D580;
+ .timescale 0 0;
+L_00888508 .functor NOT 1, v008842D0_0, C4<0>, C4<0>, C4<0>;
+v00722C28_0 .net "D", 0 0, L_0074A3C8; 1 drivers
+v00884278_0 .net "clk", 0 0, L_0074A210; 1 drivers
+v008842D0_0 .var "q", 0 0;
+v00884328_0 .net "qBar", 0 0, L_00888508; 1 drivers
+v00748F00_0 .alias "rst", 0 0, v00749218_0;
+E_00888A88/0 .event negedge, v00889B98_0;
+E_00888A88/1 .event posedge, v00884278_0;
+E_00888A88 .event/or E_00888A88/0, E_00888A88/1;
+S_0088E350 .scope module, "d3" "DFlipFlop" 3 15, 4 1, S_0088D580;
+ .timescale 0 0;
+L_00888380 .functor NOT 1, v008852C8_0, C4<0>, C4<0>, C4<0>;
+v00885218_0 .net "D", 0 0, L_0074A2C0; 1 drivers
+v00885270_0 .net "clk", 0 0, L_0074A058; 1 drivers
+v008852C8_0 .var "q", 0 0;
+v00722B78_0 .net "qBar", 0 0, L_00888380; 1 drivers
+v00722BD0_0 .alias "rst", 0 0, v00749218_0;
+E_00888C88/0 .event negedge, v00889B98_0;
+E_00888C88/1 .event posedge, v00885270_0;
+E_00888C88 .event/or E_00888C88/0, E_00888C88/1;
+S_0088E2C8 .scope module, "aTester" "rippleDown_Tester" 2 18, 2 30, S_0088D4F8;
+ .timescale 0 0;
+P_00888AEC .param/l "stimDelay" 2 35, +C4<010100>;
+v008899F0_0 .var "clk", 0 0;
+v00889B40_0 .alias "out", 3 0, v00748CF0_0;
+v00889B98_0 .var "rst_n", 0 0;
+E_00888B28 .event posedge, v008899F0_0;
+    .scope S_0088D938;
+T_0 ;
+    %wait E_00888AC8;
+    %load/v 8, v007490B8_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_0.0, 8;
+    %set/v v00749060_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v00749008_0, 1;
+    %set/v v00749060_0, 8, 1;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0088D690;
+T_1 ;
+    %wait E_00888A28;
+    %load/v 8, v00748FB0_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_1.0, 8;
+    %set/v v00748F58_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v00749320_0, 1;
+    %set/v v00748F58_0, 8, 1;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0088D8B0;
+T_2 ;
+    %wait E_00888A88;
+    %load/v 8, v00748F00_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_2.0, 8;
+    %set/v v008842D0_0, 0, 1;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/v 8, v00722C28_0, 1;
+    %set/v v008842D0_0, 8, 1;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0088E350;
+T_3 ;
+    %wait E_00888C88;
+    %load/v 8, v00722BD0_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_3.0, 8;
+    %set/v v008852C8_0, 0, 1;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/v 8, v00885218_0, 1;
+    %set/v v008852C8_0, 8, 1;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0088E2C8;
+T_4 ;
+    %delay 10, 0;
+    %load/v 8, v008899F0_0, 1;
+    %inv 8, 1;
+    %set/v v008899F0_0, 8, 1;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_0088E2C8;
+T_5 ;
+    %vpi_call 2 42 "$display", "\011\011 clk rst_n \011 out \011   Time ";
+    %vpi_call 2 43 "$monitor", "\011 %b ", v00889B40_0, $time;
+    %set/v v008899F0_0, 0, 1;
+    %end;
+    .thread T_5;
+    .scope S_0088E2C8;
+T_6 ;
+    %wait E_00888B28;
+    %set/v v00889B98_0, 0, 1;
+    %delay 20, 0;
+    %set/v v00889B98_0, 1, 1;
+    %delay 640, 0;
+    %set/v v00889B98_0, 0, 1;
+    %delay 20, 0;
+    %set/v v008899F0_0, 1, 1;
+    %delay 640, 0;
+    %set/v v008899F0_0, 0, 1;
+    %delay 20, 0;
+    %set/v v008899F0_0, 1, 1;
+    %delay 40, 0;
+    %vpi_call 2 56 "$stop";
+    %vpi_call 2 57 "$finish";
+    %jmp T_6;
+    .thread T_6;
+    .scope S_0088D4F8;
+T_7 ;
+    %vpi_call 2 24 "$dumpfile", "rippleDown.vcd";
+    %vpi_call 2 25 "$dumpvars", 2'sb01, S_0088D580;
+    %end;
+    .thread T_7;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "rippleDownTest.v";
+    "./rippleDown.v";
+    "./DFlipFlop.v";
