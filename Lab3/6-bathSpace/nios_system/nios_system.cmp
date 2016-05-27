@@ -1,0 +1,9 @@
+	component nios_system is
+		port (
+			clk_clk         : in  std_logic                    := 'X'; -- clk
+			keys_export     : out std_logic_vector(3 downto 0);        -- export
+			reset_reset_n   : in  std_logic                    := 'X'; -- reset_n
+			switches_export : out std_logic_vector(9 downto 0)         -- export
+		);
+	end component nios_system;
+

@@ -1,0 +1,19 @@
+module bathysphere(CLOCK_50, LEDR ,HEX0 , HEX1);
+		input CLOCK_50;   // 50 MHz clock
+		//input		proc_reset;
+		output   [9:0] LEDR;
+		output	[6:0] HEX0, HEX1;
+
+		wire [9:0] sw1;
+		wire [3:0] key1;
+		
+      nios_system u0 (
+        .clk_clk         (CLOCK_50),         //      clk.clk
+        .keys_export     (key1),     //     keys.export
+        .reset_reset_n   (key1[0]),   //    reset.reset_n
+        .switches_export (sw1)  // switches.export
+    );
+
+		DE1_SoC (.CLOCK_50(CLOCK_50), .ledr(LEDR) , .sw(sw1) , .hex0(HEX0) , .hex1(HEX1) , .key(key1));
+ 
+endmodule

@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Fri May 13 00:52:25 2016
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+Revision Name : Light_and_switch
+Top-level Entity Name : Light_and_switch
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 919
+Total pins : 18
+Total virtual pins : 0
+Total block memory bits : 44,032
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

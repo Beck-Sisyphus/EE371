@@ -1,0 +1,1606 @@
+
+bathysphere_eclipse2.elf:     file format elf32-littlenios2
+bathysphere_eclipse2.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00001020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00001000 paddr 0x00001000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00001020 paddr 0x00001020 align 2**12
+         filesz 0x00000c50 memsz 0x00000c50 flags r-x
+    LOAD off    0x00001c70 vaddr 0x00001c70 paddr 0x00001ce0 align 2**12
+         filesz 0x00000070 memsz 0x00000070 flags rw-
+    LOAD off    0x00001d50 vaddr 0x00001d50 paddr 0x00001d50 align 2**12
+         filesz 0x00000000 memsz 0x0000000c flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00001000  00001000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00001020  00001020  00001ce0  2**0
+                  CONTENTS
+  2 .text         00000958  00001020  00001020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       000002f8  00001978  00001978  00001978  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       00000070  00001c70  00001ce0  00001c70  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          0000000c  00001d50  00001d50  00001d50  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_memory 00000000  00001d5c  00001d5c  00001ce0  2**0
+                  CONTENTS
+  7 .comment      00000023  00000000  00000000  00001ce0  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 000001c8  00000000  00000000  00001d08  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   00001b4e  00000000  00000000  00001ed0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00000a25  00000000  00000000  00003a1e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   000009c9  00000000  00000000  00004443  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  0000024c  00000000  00000000  00004e0c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    0000073b  00000000  00000000  00005058  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    000004c1  00000000  00000000  00005793  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  00005c54  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 000000b0  00000000  00000000  00005c68  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .thread_model 00000003  00000000  00000000  00006c1a  2**0
+                  CONTENTS, READONLY
+ 18 .cpu          0000000f  00000000  00000000  00006c1d  2**0
+                  CONTENTS, READONLY
+ 19 .qsys         00000001  00000000  00000000  00006c2c  2**0
+                  CONTENTS, READONLY
+ 20 .simulation_enabled 00000001  00000000  00000000  00006c2d  2**0
+                  CONTENTS, READONLY
+ 21 .stderr_dev   00000009  00000000  00000000  00006c2e  2**0
+                  CONTENTS, READONLY
+ 22 .stdin_dev    00000009  00000000  00000000  00006c37  2**0
+                  CONTENTS, READONLY
+ 23 .stdout_dev   00000009  00000000  00000000  00006c40  2**0
+                  CONTENTS, READONLY
+ 24 .sopc_system_name 0000000b  00000000  00000000  00006c49  2**0
+                  CONTENTS, READONLY
+ 25 .quartus_project_dir 0000002b  00000000  00000000  00006c54  2**0
+                  CONTENTS, READONLY
+ 26 .jdi          00004394  00000000  00000000  00006c7f  2**0
+                  CONTENTS, READONLY
+ 27 .sopcinfo     00035611  00000000  00000000  0000b013  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00001000 l    d  .entry	00000000 .entry
+00001020 l    d  .exceptions	00000000 .exceptions
+00001020 l    d  .text	00000000 .text
+00001978 l    d  .rodata	00000000 .rodata
+00001c70 l    d  .rwdata	00000000 .rwdata
+00001d50 l    d  .bss	00000000 .bss
+00001d5c l    d  .onchip_memory	00000000 .onchip_memory
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../bathysphere_eclipse2_bsp//obj/HAL/src/crt0.o
+00001058 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 hello_world_small.c
+00000000 l    df *ABS*	00000000 alt_getchar.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_printf.c
+00000000 l    df *ABS*	00000000 alt_putchar.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_read.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_write.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_dev.c
+00001964 l     F .text	00000008 alt_dev_null_write
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_qsys_irq.c
+000016cc g     F .text	0000002c alt_main
+00001ce0 g       *ABS*	00000000 __flash_rwdata_start
+00001cc8 g     O .rwdata	00000004 jtag_uart
+00001000 g     F .entry	0000000c __reset
+00001020 g       *ABS*	00000000 __flash_exceptions_start
+00001d54 g     O .bss	00000004 alt_argv
+00009cc8 g       *ABS*	00000000 _gp
+00001c70 g     O .rwdata	00000030 alt_fd_list
+000018d0 g     F .text	0000005c altera_avalon_jtag_uart_read
+00001ccc g     O .rwdata	00000004 alt_max_fd
+00001d5c g       *ABS*	00000000 __bss_end
+00001590 g     F .text	00000044 alt_getchar
+00001ca0 g     O .rwdata	00000028 alt_dev_null
+00001960 g     F .text	00000004 alt_dcache_flush_all
+00001ce0 g       *ABS*	00000000 __ram_rwdata_end
+00001000 g       *ABS*	00000000 __alt_mem_onchip_memory
+00001cd0 g     O .rwdata	00000008 alt_dev_list
+00001c70 g       *ABS*	00000000 __ram_rodata_end
+00001d5c g       *ABS*	00000000 end
+00002000 g       *ABS*	00000000 __alt_stack_pointer
+0000192c g     F .text	00000034 altera_avalon_jtag_uart_write
+000016f8 g     F .text	0000016c alt_printf
+00001020 g     F .text	0000003c _start
+000018cc g     F .text	00000004 alt_sys_init
+00001c70 g       *ABS*	00000000 __ram_rwdata_start
+00001978 g       *ABS*	00000000 __ram_rodata_start
+00001d5c g       *ABS*	00000000 __alt_stack_base
+00001d50 g       *ABS*	00000000 __bss_start
+0000105c g     F .text	00000534 main
+00001d50 g     O .bss	00000004 alt_envp
+00001978 g       *ABS*	00000000 __flash_rodata_start
+000018ac g     F .text	00000020 alt_irq_init
+00001d58 g     O .bss	00000004 alt_argc
+00001cd8 g     O .rwdata	00000008 alt_fs_list
+00001020 g       *ABS*	00000000 __ram_exceptions_start
+00001ce0 g       *ABS*	00000000 _edata
+00001d5c g       *ABS*	00000000 _end
+00001020 g       *ABS*	00000000 __ram_exceptions_end
+00001970 g     F .text	00000008 altera_nios2_qsys_irq_init
+00002000 g       *ABS*	00000000 __alt_data_end
+0000100c g       .entry	00000000 _exit
+00001864 g     F .text	00000048 alt_putchar
+0000196c g     F .text	00000004 alt_icache_flush_all
+000015d4 g     F .text	000000f8 alt_load
+
+
+
+Disassembly of section .entry:
+
+00001000 <__reset>:
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+    1000:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+    1004:	08440814 	ori	at,at,4128
+    jmp r1
+    1008:	0800683a 	jmp	at
+
+0000100c <_exit>:
+	...
+
+Disassembly of section .text:
+
+00001020 <_start>:
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+    1020:	06c00034 	movhi	sp,0
+    ori sp, sp, %lo(__alt_stack_pointer)
+    1024:	dec80014 	ori	sp,sp,8192
+    movhi gp, %hi(_gp)
+    1028:	06800034 	movhi	gp,0
+    ori gp, gp, %lo(_gp)
+    102c:	d6a73214 	ori	gp,gp,40136
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+    1030:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+    1034:	10875414 	ori	r2,r2,7504
+
+    movhi r3, %hi(__bss_end)
+    1038:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+    103c:	18c75714 	ori	r3,r3,7516
+
+    beq r2, r3, 1f
+    1040:	10c00326 	beq	r2,r3,1050 <_start+0x30>
+
+0:
+    stw zero, (r2)
+    1044:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+    1048:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+    104c:	10fffd36 	bltu	r2,r3,1044 <_gp+0xffff737c>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+    1050:	00015d40 	call	15d4 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+    1054:	00016cc0 	call	16cc <alt_main>
+
+00001058 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+    1058:	003fff06 	br	1058 <_gp+0xffff7390>
+
+0000105c <main>:
+#define keys		(volatile char *) 0x3000
+
+int main()
+{
+	char actionSignal;
+	alt_printf("\n**  Welcome to the Interlock Management System!  **\n");
+    105c:	01000034 	movhi	r4,0
+
+#define switches 	(volatile char *) 0x3010
+#define keys		(volatile char *) 0x3000
+
+int main()
+{
+    1060:	defffa04 	addi	sp,sp,-24
+	char actionSignal;
+	alt_printf("\n**  Welcome to the Interlock Management System!  **\n");
+    1064:	21065e04 	addi	r4,r4,6520
+
+#define switches 	(volatile char *) 0x3010
+#define keys		(volatile char *) 0x3000
+
+int main()
+{
+    1068:	dfc00515 	stw	ra,20(sp)
+    106c:	dc400115 	stw	r17,4(sp)
+    1070:	dd000415 	stw	r20,16(sp)
+    1074:	dcc00315 	stw	r19,12(sp)
+    1078:	dc800215 	stw	r18,8(sp)
+    107c:	dc000015 	stw	r16,0(sp)
+	char actionSignal;
+	alt_printf("\n**  Welcome to the Interlock Management System!  **\n");
+    1080:	00016f80 	call	16f8 <alt_printf>
+	alt_printf("\nFor bathysphere arrival, type 'A' then press enter.\n");
+    1084:	01000034 	movhi	r4,0
+    1088:	21066c04 	addi	r4,r4,6576
+    108c:	00016f80 	call	16f8 <alt_printf>
+	alt_printf("\nFor bathysphere departure, type 'D' then press enter.\n");
+    1090:	01000034 	movhi	r4,0
+    1094:	21067a04 	addi	r4,r4,6632
+    1098:	00016f80 	call	16f8 <alt_printf>
+	alt_printf("\nTo reset the system, please type 'R' then press enter.\n");
+    109c:	01000034 	movhi	r4,0
+    10a0:	21068804 	addi	r4,r4,6688
+    10a4:	00016f80 	call	16f8 <alt_printf>
+	actionSignal = alt_getchar();
+    10a8:	00015900 	call	1590 <alt_getchar>
+	if (actionSignal == 'A') {					// SW[0]
+    10ac:	14403fcc 	andi	r17,r2,255
+    10b0:	8c40201c 	xori	r17,r17,128
+    10b4:	8c7fe004 	addi	r17,r17,-128
+    10b8:	00801044 	movi	r2,65
+    10bc:	88807a1e 	bne	r17,r2,12a8 <main+0x24c>
+		*switches = *switches | 0000000001;
+    10c0:	040c0404 	movi	r16,12304
+    10c4:	80800003 	ldbu	r2,0(r16)
+		alt_printf("\nBathysphere Arriving\n");
+    10c8:	01000034 	movhi	r4,0
+    10cc:	21069704 	addi	r4,r4,6748
+	alt_printf("\nFor bathysphere arrival, type 'A' then press enter.\n");
+	alt_printf("\nFor bathysphere departure, type 'D' then press enter.\n");
+	alt_printf("\nTo reset the system, please type 'R' then press enter.\n");
+	actionSignal = alt_getchar();
+	if (actionSignal == 'A') {					// SW[0]
+		*switches = *switches | 0000000001;
+    10d0:	10800054 	ori	r2,r2,1
+    10d4:	80800005 	stb	r2,0(r16)
+		alt_printf("\nBathysphere Arriving\n");
+    10d8:	00016f80 	call	16f8 <alt_printf>
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+    10dc:	01000034 	movhi	r4,0
+    10e0:	21069d04 	addi	r4,r4,6772
+    10e4:	00016f80 	call	16f8 <alt_printf>
+		char next1 = alt_getchar();
+    10e8:	00015900 	call	1590 <alt_getchar>
+		if (next1 == 'E') {
+    10ec:	10803fcc 	andi	r2,r2,255
+    10f0:	1080201c 	xori	r2,r2,128
+    10f4:	10bfe004 	addi	r2,r2,-128
+    10f8:	00c01144 	movi	r3,69
+    10fc:	10c11b1e 	bne	r2,r3,156c <main+0x510>
+			*switches = *switches | 1000000000;
+    1100:	80800003 	ldbu	r2,0(r16)
+			alt_printf("\nEmpty\n");
+    1104:	01000034 	movhi	r4,0
+    1108:	2106a804 	addi	r4,r4,6816
+		*switches = *switches | 0000000001;
+		alt_printf("\nBathysphere Arriving\n");
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+		char next1 = alt_getchar();
+		if (next1 == 'E') {
+			*switches = *switches | 1000000000;
+    110c:	80800005 	stb	r2,0(r16)
+			alt_printf("\nEmpty\n");
+    1110:	00016f80 	call	16f8 <alt_printf>
+			*switches = *switches & 0111111111;
+    1114:	80800003 	ldbu	r2,0(r16)
+			alt_printf("\nType 'P' to pressurize the chamber\n");
+    1118:	01000034 	movhi	r4,0
+    111c:	2106aa04 	addi	r4,r4,6824
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+		char next1 = alt_getchar();
+		if (next1 == 'E') {
+			*switches = *switches | 1000000000;
+			alt_printf("\nEmpty\n");
+			*switches = *switches & 0111111111;
+    1120:	1080124c 	andi	r2,r2,73
+    1124:	80800005 	stb	r2,0(r16)
+			alt_printf("\nType 'P' to pressurize the chamber\n");
+    1128:	00016f80 	call	16f8 <alt_printf>
+			char next2 = alt_getchar();
+    112c:	00015900 	call	1590 <alt_getchar>
+			if (next2 == 'P') {
+    1130:	10803fcc 	andi	r2,r2,255
+    1134:	1080201c 	xori	r2,r2,128
+    1138:	10bfe004 	addi	r2,r2,-128
+    113c:	00c01404 	movi	r3,80
+    1140:	10c10a1e 	bne	r2,r3,156c <main+0x510>
+				*keys = *keys & 1101;
+    1144:	044c0004 	movi	r17,12288
+    1148:	88800003 	ldbu	r2,0(r17)
+				alt_printf("\nPressurizing\n");
+    114c:	01000034 	movhi	r4,0
+    1150:	2106b404 	addi	r4,r4,6864
+			alt_printf("\nEmpty\n");
+			*switches = *switches & 0111111111;
+			alt_printf("\nType 'P' to pressurize the chamber\n");
+			char next2 = alt_getchar();
+			if (next2 == 'P') {
+				*keys = *keys & 1101;
+    1154:	1080134c 	andi	r2,r2,77
+    1158:	88800005 	stb	r2,0(r17)
+				alt_printf("\nPressurizing\n");
+    115c:	00016f80 	call	16f8 <alt_printf>
+				alt_printf("\nType 'O' and press enter to open outer port\n");
+    1160:	01000034 	movhi	r4,0
+    1164:	2106b804 	addi	r4,r4,6880
+    1168:	00016f80 	call	16f8 <alt_printf>
+				char next3 = alt_getchar();
+    116c:	00015900 	call	1590 <alt_getchar>
+				if (next3 == 'O') {
+    1170:	14803fcc 	andi	r18,r2,255
+    1174:	9480201c 	xori	r18,r18,128
+    1178:	94bfe004 	addi	r18,r18,-128
+    117c:	008013c4 	movi	r2,79
+    1180:	9080fa1e 	bne	r18,r2,156c <main+0x510>
+					*switches = *switches | 0000000100;
+    1184:	80c00003 	ldbu	r3,0(r16)
+					alt_printf("\nOuter port opened\n");
+    1188:	01000034 	movhi	r4,0
+    118c:	2106c404 	addi	r4,r4,6928
+				*keys = *keys & 1101;
+				alt_printf("\nPressurizing\n");
+				alt_printf("\nType 'O' and press enter to open outer port\n");
+				char next3 = alt_getchar();
+				if (next3 == 'O') {
+					*switches = *switches | 0000000100;
+    1190:	18c01014 	ori	r3,r3,64
+    1194:	80c00005 	stb	r3,0(r16)
+					alt_printf("\nOuter port opened\n");
+    1198:	00016f80 	call	16f8 <alt_printf>
+					alt_printf("\nType 'C' to close Outer port\n");
+    119c:	01000034 	movhi	r4,0
+    11a0:	2106c904 	addi	r4,r4,6948
+    11a4:	00016f80 	call	16f8 <alt_printf>
+					char next4 = alt_getchar();
+    11a8:	00015900 	call	1590 <alt_getchar>
+					if (next4 == 'C') {
+    11ac:	14c03fcc 	andi	r19,r2,255
+    11b0:	9cc0201c 	xori	r19,r19,128
+    11b4:	9cffe004 	addi	r19,r19,-128
+    11b8:	008010c4 	movi	r2,67
+    11bc:	9880eb1e 	bne	r19,r2,156c <main+0x510>
+						*switches = *switches & 1111111011;
+    11c0:	80c00003 	ldbu	r3,0(r16)
+						alt_printf("\nOuter port closed\n");
+    11c4:	01000034 	movhi	r4,0
+    11c8:	2106d104 	addi	r4,r4,6980
+					*switches = *switches | 0000000100;
+					alt_printf("\nOuter port opened\n");
+					alt_printf("\nType 'C' to close Outer port\n");
+					char next4 = alt_getchar();
+					if (next4 == 'C') {
+						*switches = *switches & 1111111011;
+    11cc:	18c018cc 	andi	r3,r3,99
+    11d0:	80c00005 	stb	r3,0(r16)
+						alt_printf("\nOuter port closed\n");
+    11d4:	00016f80 	call	16f8 <alt_printf>
+						alt_printf("\nType 'D' to depressurize the chamber\n");
+    11d8:	01000034 	movhi	r4,0
+    11dc:	2106d604 	addi	r4,r4,7000
+    11e0:	00016f80 	call	16f8 <alt_printf>
+						char next5 = alt_getchar();
+    11e4:	00015900 	call	1590 <alt_getchar>
+						if (next5 == 'D') {
+    11e8:	10803fcc 	andi	r2,r2,255
+    11ec:	1080201c 	xori	r2,r2,128
+    11f0:	10bfe004 	addi	r2,r2,-128
+    11f4:	00c01104 	movi	r3,68
+    11f8:	10c0dc1e 	bne	r2,r3,156c <main+0x510>
+							*keys = *keys & 1011;
+    11fc:	88800003 	ldbu	r2,0(r17)
+    1200:	00fffcc4 	movi	r3,-13
+							alt_printf("\nDepressurizing\n");
+    1204:	01000034 	movhi	r4,0
+						*switches = *switches & 1111111011;
+						alt_printf("\nOuter port closed\n");
+						alt_printf("\nType 'D' to depressurize the chamber\n");
+						char next5 = alt_getchar();
+						if (next5 == 'D') {
+							*keys = *keys & 1011;
+    1208:	10c6703a 	and	r3,r2,r3
+    120c:	88c00005 	stb	r3,0(r17)
+							alt_printf("\nDepressurizing\n");
+    1210:	2106e004 	addi	r4,r4,7040
+    1214:	00016f80 	call	16f8 <alt_printf>
+							alt_printf("\nType 'O' to open the inner port\n");
+    1218:	01000034 	movhi	r4,0
+    121c:	2106e504 	addi	r4,r4,7060
+    1220:	00016f80 	call	16f8 <alt_printf>
+							char next6 = alt_getchar();
+    1224:	00015900 	call	1590 <alt_getchar>
+							if (next6 == 'O') {
+    1228:	10803fcc 	andi	r2,r2,255
+    122c:	1080201c 	xori	r2,r2,128
+    1230:	10bfe004 	addi	r2,r2,-128
+    1234:	1480cd1e 	bne	r2,r18,156c <main+0x510>
+								*switches = *switches | 0000001000;
+    1238:	80800003 	ldbu	r2,0(r16)
+								alt_printf("\nInner port opened\n");
+    123c:	01000034 	movhi	r4,0
+    1240:	2106ee04 	addi	r4,r4,7096
+							*keys = *keys & 1011;
+							alt_printf("\nDepressurizing\n");
+							alt_printf("\nType 'O' to open the inner port\n");
+							char next6 = alt_getchar();
+							if (next6 == 'O') {
+								*switches = *switches | 0000001000;
+    1244:	80800005 	stb	r2,0(r16)
+								alt_printf("\nInner port opened\n");
+    1248:	00016f80 	call	16f8 <alt_printf>
+								alt_printf("\nType 'C' to close the inner port\n");
+    124c:	01000034 	movhi	r4,0
+    1250:	2106f304 	addi	r4,r4,7116
+    1254:	00016f80 	call	16f8 <alt_printf>
+								char next7 = alt_getchar();
+    1258:	00015900 	call	1590 <alt_getchar>
+								if(next7 == 'C') {
+    125c:	10803fcc 	andi	r2,r2,255
+    1260:	1080201c 	xori	r2,r2,128
+    1264:	10bfe004 	addi	r2,r2,-128
+    1268:	14c0c01e 	bne	r2,r19,156c <main+0x510>
+									*switches = *switches & 1111110111;
+    126c:	80c00003 	ldbu	r3,0(r16)
+    1270:	00bff7c4 	movi	r2,-33
+									alt_printf("\nInner port closed\n");
+    1274:	01000034 	movhi	r4,0
+								*switches = *switches | 0000001000;
+								alt_printf("\nInner port opened\n");
+								alt_printf("\nType 'C' to close the inner port\n");
+								char next7 = alt_getchar();
+								if(next7 == 'C') {
+									*switches = *switches & 1111110111;
+    1278:	1884703a 	and	r2,r3,r2
+    127c:	80800005 	stb	r2,0(r16)
+									alt_printf("\nInner port closed\n");
+    1280:	2106fc04 	addi	r4,r4,7152
+    1284:	00016f80 	call	16f8 <alt_printf>
+									alt_printf("\nMission Complete\n");
+    1288:	01000034 	movhi	r4,0
+    128c:	21070104 	addi	r4,r4,7172
+    1290:	00016f80 	call	16f8 <alt_printf>
+									*switches = *switches & 1111111110;
+    1294:	80c00003 	ldbu	r3,0(r16)
+    1298:	00bff184 	movi	r2,-58
+    129c:	1884703a 	and	r2,r3,r2
+    12a0:	80800005 	stb	r2,0(r16)
+    12a4:	0000b106 	br	156c <main+0x510>
+						}
+					}
+				}
+			}
+		}
+	} else if (actionSignal == 'D') {
+    12a8:	00801104 	movi	r2,68
+    12ac:	8880a61e 	bne	r17,r2,1548 <main+0x4ec>
+		*switches = *switches | 0000000010; // SW[1]
+    12b0:	040c0404 	movi	r16,12304
+    12b4:	80800003 	ldbu	r2,0(r16)
+		alt_printf("\nBathysphere Leaving\n");
+    12b8:	01000034 	movhi	r4,0
+    12bc:	21070604 	addi	r4,r4,7192
+					}
+				}
+			}
+		}
+	} else if (actionSignal == 'D') {
+		*switches = *switches | 0000000010; // SW[1]
+    12c0:	10800214 	ori	r2,r2,8
+    12c4:	80800005 	stb	r2,0(r16)
+		alt_printf("\nBathysphere Leaving\n");
+    12c8:	00016f80 	call	16f8 <alt_printf>
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+    12cc:	01000034 	movhi	r4,0
+    12d0:	21069d04 	addi	r4,r4,6772
+    12d4:	00016f80 	call	16f8 <alt_printf>
+		char next8 = alt_getchar();
+    12d8:	00015900 	call	1590 <alt_getchar>
+		if (next8 == 'E') {
+    12dc:	10803fcc 	andi	r2,r2,255
+    12e0:	1080201c 	xori	r2,r2,128
+    12e4:	10bfe004 	addi	r2,r2,-128
+    12e8:	00c01144 	movi	r3,69
+    12ec:	10c09f1e 	bne	r2,r3,156c <main+0x510>
+			*switches = *switches | 1000000000;
+    12f0:	80800003 	ldbu	r2,0(r16)
+			alt_printf("\nEmpty\n");
+    12f4:	01000034 	movhi	r4,0
+    12f8:	2106a804 	addi	r4,r4,6816
+		*switches = *switches | 0000000010; // SW[1]
+		alt_printf("\nBathysphere Leaving\n");
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+		char next8 = alt_getchar();
+		if (next8 == 'E') {
+			*switches = *switches | 1000000000;
+    12fc:	80800005 	stb	r2,0(r16)
+			alt_printf("\nEmpty\n");
+    1300:	00016f80 	call	16f8 <alt_printf>
+			*switches = *switches & 0111111111;
+    1304:	80800003 	ldbu	r2,0(r16)
+			alt_printf("\nType 'D' to depressurize the chamber\n");
+    1308:	01000034 	movhi	r4,0
+    130c:	2106d604 	addi	r4,r4,7000
+		alt_printf("\nType 'E' to check if the chamber is empty\n");
+		char next8 = alt_getchar();
+		if (next8 == 'E') {
+			*switches = *switches | 1000000000;
+			alt_printf("\nEmpty\n");
+			*switches = *switches & 0111111111;
+    1310:	1080124c 	andi	r2,r2,73
+    1314:	80800005 	stb	r2,0(r16)
+			alt_printf("\nType 'D' to depressurize the chamber\n");
+    1318:	00016f80 	call	16f8 <alt_printf>
+			char next9 = alt_getchar();
+    131c:	00015900 	call	1590 <alt_getchar>
+			if (next9 == 'D') {
+    1320:	14803fcc 	andi	r18,r2,255
+    1324:	9480201c 	xori	r18,r18,128
+    1328:	94bfe004 	addi	r18,r18,-128
+    132c:	94408f1e 	bne	r18,r17,156c <main+0x510>
+				*keys = *keys & 1011;
+    1330:	044c0004 	movi	r17,12288
+    1334:	88c00003 	ldbu	r3,0(r17)
+    1338:	00bffcc4 	movi	r2,-13
+				alt_printf("\nDepressurizing\n");
+    133c:	01000034 	movhi	r4,0
+			alt_printf("\nEmpty\n");
+			*switches = *switches & 0111111111;
+			alt_printf("\nType 'D' to depressurize the chamber\n");
+			char next9 = alt_getchar();
+			if (next9 == 'D') {
+				*keys = *keys & 1011;
+    1340:	1884703a 	and	r2,r3,r2
+    1344:	88800005 	stb	r2,0(r17)
+				alt_printf("\nDepressurizing\n");
+    1348:	2106e004 	addi	r4,r4,7040
+    134c:	00016f80 	call	16f8 <alt_printf>
+				alt_printf("\nType 'O' to open the inner port\n");
+    1350:	01000034 	movhi	r4,0
+    1354:	2106e504 	addi	r4,r4,7060
+    1358:	00016f80 	call	16f8 <alt_printf>
+				char next10 = alt_getchar();
+    135c:	00015900 	call	1590 <alt_getchar>
+				if (next10 == 'O') {
+    1360:	15003fcc 	andi	r20,r2,255
+    1364:	a500201c 	xori	r20,r20,128
+    1368:	a53fe004 	addi	r20,r20,-128
+    136c:	008013c4 	movi	r2,79
+    1370:	a0807e1e 	bne	r20,r2,156c <main+0x510>
+					*switches = *switches | 0000001000;
+    1374:	80800003 	ldbu	r2,0(r16)
+					alt_printf("\nInner port opened\n");
+    1378:	01000034 	movhi	r4,0
+    137c:	2106ee04 	addi	r4,r4,7096
+				*keys = *keys & 1011;
+				alt_printf("\nDepressurizing\n");
+				alt_printf("\nType 'O' to open the inner port\n");
+				char next10 = alt_getchar();
+				if (next10 == 'O') {
+					*switches = *switches | 0000001000;
+    1380:	80800005 	stb	r2,0(r16)
+					alt_printf("\nInner port opened\n");
+    1384:	00016f80 	call	16f8 <alt_printf>
+					alt_printf("\nType 'C' to close the inner port\n");
+    1388:	01000034 	movhi	r4,0
+    138c:	2106f304 	addi	r4,r4,7116
+    1390:	00016f80 	call	16f8 <alt_printf>
+					char next11 = alt_getchar();
+    1394:	00015900 	call	1590 <alt_getchar>
+					if(next11 == 'C') {
+    1398:	14c03fcc 	andi	r19,r2,255
+    139c:	9cc0201c 	xori	r19,r19,128
+    13a0:	9cffe004 	addi	r19,r19,-128
+    13a4:	008010c4 	movi	r2,67
+    13a8:	9880701e 	bne	r19,r2,156c <main+0x510>
+						*switches = *switches & 1111110111;
+    13ac:	80800003 	ldbu	r2,0(r16)
+    13b0:	00fff7c4 	movi	r3,-33
+						alt_printf("\nInner port closed\n");
+    13b4:	01000034 	movhi	r4,0
+					*switches = *switches | 0000001000;
+					alt_printf("\nInner port opened\n");
+					alt_printf("\nType 'C' to close the inner port\n");
+					char next11 = alt_getchar();
+					if(next11 == 'C') {
+						*switches = *switches & 1111110111;
+    13b8:	10c6703a 	and	r3,r2,r3
+    13bc:	80c00005 	stb	r3,0(r16)
+						alt_printf("\nInner port closed\n");
+    13c0:	2106fc04 	addi	r4,r4,7152
+    13c4:	00016f80 	call	16f8 <alt_printf>
+						alt_printf("Type 'P' to pressurize the chamber");
+    13c8:	01000034 	movhi	r4,0
+    13cc:	21070c04 	addi	r4,r4,7216
+    13d0:	00016f80 	call	16f8 <alt_printf>
+						char next12 = alt_getchar();
+    13d4:	00015900 	call	1590 <alt_getchar>
+						if (next12 == 'P') {
+    13d8:	10803fcc 	andi	r2,r2,255
+    13dc:	1080201c 	xori	r2,r2,128
+    13e0:	10bfe004 	addi	r2,r2,-128
+    13e4:	00c01404 	movi	r3,80
+    13e8:	10c0601e 	bne	r2,r3,156c <main+0x510>
+							*keys = *keys & 1101;
+    13ec:	88c00003 	ldbu	r3,0(r17)
+							alt_printf("\nPressurizing\n");
+    13f0:	01000034 	movhi	r4,0
+    13f4:	2106b404 	addi	r4,r4,6864
+						*switches = *switches & 1111110111;
+						alt_printf("\nInner port closed\n");
+						alt_printf("Type 'P' to pressurize the chamber");
+						char next12 = alt_getchar();
+						if (next12 == 'P') {
+							*keys = *keys & 1101;
+    13f8:	18c0134c 	andi	r3,r3,77
+    13fc:	88c00005 	stb	r3,0(r17)
+							alt_printf("\nPressurizing\n");
+    1400:	00016f80 	call	16f8 <alt_printf>
+							alt_printf("\nType 'O' and press enter to open outer port\n");
+    1404:	01000034 	movhi	r4,0
+    1408:	2106b804 	addi	r4,r4,6880
+    140c:	00016f80 	call	16f8 <alt_printf>
+							char next13 = alt_getchar();
+    1410:	00015900 	call	1590 <alt_getchar>
+							if (next13 == 'O') {
+    1414:	10803fcc 	andi	r2,r2,255
+    1418:	1080201c 	xori	r2,r2,128
+    141c:	10bfe004 	addi	r2,r2,-128
+    1420:	1500521e 	bne	r2,r20,156c <main+0x510>
+								*switches = *switches | 0000000100;
+    1424:	80c00003 	ldbu	r3,0(r16)
+								alt_printf("\nOuter port opened\n");
+    1428:	01000034 	movhi	r4,0
+    142c:	2106c404 	addi	r4,r4,6928
+							*keys = *keys & 1101;
+							alt_printf("\nPressurizing\n");
+							alt_printf("\nType 'O' and press enter to open outer port\n");
+							char next13 = alt_getchar();
+							if (next13 == 'O') {
+								*switches = *switches | 0000000100;
+    1430:	18c01014 	ori	r3,r3,64
+    1434:	80c00005 	stb	r3,0(r16)
+								alt_printf("\nOuter port opened\n");
+    1438:	00016f80 	call	16f8 <alt_printf>
+								alt_printf("\nType 'C' to close Outer port\n");
+    143c:	01000034 	movhi	r4,0
+    1440:	2106c904 	addi	r4,r4,6948
+    1444:	00016f80 	call	16f8 <alt_printf>
+								char next14 = alt_getchar();
+    1448:	00015900 	call	1590 <alt_getchar>
+								if (next14 == 'C') {
+    144c:	10803fcc 	andi	r2,r2,255
+    1450:	1080201c 	xori	r2,r2,128
+    1454:	10bfe004 	addi	r2,r2,-128
+    1458:	14c0441e 	bne	r2,r19,156c <main+0x510>
+									*switches = *switches & 1111111011;
+    145c:	80c00003 	ldbu	r3,0(r16)
+									alt_printf("\nOuter port closed\n");
+    1460:	01000034 	movhi	r4,0
+    1464:	2106d104 	addi	r4,r4,6980
+								*switches = *switches | 0000000100;
+								alt_printf("\nOuter port opened\n");
+								alt_printf("\nType 'C' to close Outer port\n");
+								char next14 = alt_getchar();
+								if (next14 == 'C') {
+									*switches = *switches & 1111111011;
+    1468:	18c018cc 	andi	r3,r3,99
+    146c:	80c00005 	stb	r3,0(r16)
+									alt_printf("\nOuter port closed\n");
+    1470:	00016f80 	call	16f8 <alt_printf>
+									alt_printf("\nType 'D' to depressurize the chamber\n");
+    1474:	01000034 	movhi	r4,0
+    1478:	2106d604 	addi	r4,r4,7000
+    147c:	00016f80 	call	16f8 <alt_printf>
+									char next15 = alt_getchar();
+    1480:	00015900 	call	1590 <alt_getchar>
+									if (next15 == 'D') {
+    1484:	10803fcc 	andi	r2,r2,255
+    1488:	1080201c 	xori	r2,r2,128
+    148c:	10bfe004 	addi	r2,r2,-128
+    1490:	1480361e 	bne	r2,r18,156c <main+0x510>
+										*keys = *keys & 1011;
+    1494:	88800003 	ldbu	r2,0(r17)
+    1498:	8807883a 	mov	r3,r17
+    149c:	047ffcc4 	movi	r17,-13
+    14a0:	1444703a 	and	r2,r2,r17
+										alt_printf("\nDepressurizing\n");
+    14a4:	01000034 	movhi	r4,0
+									*switches = *switches & 1111111011;
+									alt_printf("\nOuter port closed\n");
+									alt_printf("\nType 'D' to depressurize the chamber\n");
+									char next15 = alt_getchar();
+									if (next15 == 'D') {
+										*keys = *keys & 1011;
+    14a8:	18800005 	stb	r2,0(r3)
+										alt_printf("\nDepressurizing\n");
+    14ac:	2106e004 	addi	r4,r4,7040
+    14b0:	00016f80 	call	16f8 <alt_printf>
+										alt_printf("\nType 'O' to open the inner port\n");
+    14b4:	01000034 	movhi	r4,0
+    14b8:	2106e504 	addi	r4,r4,7060
+    14bc:	00016f80 	call	16f8 <alt_printf>
+										char next16 = alt_getchar();
+    14c0:	00015900 	call	1590 <alt_getchar>
+										if (next16 == 'O') {
+    14c4:	10803fcc 	andi	r2,r2,255
+    14c8:	1080201c 	xori	r2,r2,128
+    14cc:	10bfe004 	addi	r2,r2,-128
+    14d0:	00c013c4 	movi	r3,79
+    14d4:	10c0251e 	bne	r2,r3,156c <main+0x510>
+											*switches = *switches | 0000001000;
+    14d8:	80800003 	ldbu	r2,0(r16)
+											alt_printf("\nInner port opened\n");
+    14dc:	01000034 	movhi	r4,0
+    14e0:	2106ee04 	addi	r4,r4,7096
+										*keys = *keys & 1011;
+										alt_printf("\nDepressurizing\n");
+										alt_printf("\nType 'O' to open the inner port\n");
+										char next16 = alt_getchar();
+										if (next16 == 'O') {
+											*switches = *switches | 0000001000;
+    14e4:	80800005 	stb	r2,0(r16)
+											alt_printf("\nInner port opened\n");
+    14e8:	00016f80 	call	16f8 <alt_printf>
+											alt_printf("\nType 'C' to close the inner port\n");
+    14ec:	01000034 	movhi	r4,0
+    14f0:	2106f304 	addi	r4,r4,7116
+    14f4:	00016f80 	call	16f8 <alt_printf>
+											char next17 = alt_getchar();
+    14f8:	00015900 	call	1590 <alt_getchar>
+											if(next17 == 'C') {
+    14fc:	10803fcc 	andi	r2,r2,255
+    1500:	1080201c 	xori	r2,r2,128
+    1504:	10bfe004 	addi	r2,r2,-128
+    1508:	00c010c4 	movi	r3,67
+    150c:	10c0171e 	bne	r2,r3,156c <main+0x510>
+												*switches = *switches & 1111110111;
+    1510:	80c00003 	ldbu	r3,0(r16)
+    1514:	00bff7c4 	movi	r2,-33
+												alt_printf("\nInner port closed\n");
+    1518:	01000034 	movhi	r4,0
+											*switches = *switches | 0000001000;
+											alt_printf("\nInner port opened\n");
+											alt_printf("\nType 'C' to close the inner port\n");
+											char next17 = alt_getchar();
+											if(next17 == 'C') {
+												*switches = *switches & 1111110111;
+    151c:	1884703a 	and	r2,r3,r2
+    1520:	80800005 	stb	r2,0(r16)
+												alt_printf("\nInner port closed\n");
+    1524:	2106fc04 	addi	r4,r4,7152
+    1528:	00016f80 	call	16f8 <alt_printf>
+												alt_printf("\nMission Complete\n");
+    152c:	01000034 	movhi	r4,0
+    1530:	21070104 	addi	r4,r4,7172
+    1534:	00016f80 	call	16f8 <alt_printf>
+												*switches = *switches & 1011;
+    1538:	80800003 	ldbu	r2,0(r16)
+    153c:	1462703a 	and	r17,r2,r17
+    1540:	84400005 	stb	r17,0(r16)
+    1544:	00000906 	br	156c <main+0x510>
+						}
+					}
+				}
+			}
+		}
+	} else if (actionSignal == 'R') {
+    1548:	00801484 	movi	r2,82
+    154c:	8880071e 	bne	r17,r2,156c <main+0x510>
+		*keys = *keys & 1110; 		// ~KEY[0]
+    1550:	00cc0004 	movi	r3,12288
+    1554:	18800003 	ldbu	r2,0(r3)
+		alt_printf("\nSYSTEM RESET\n");
+    1558:	01000034 	movhi	r4,0
+    155c:	21071504 	addi	r4,r4,7252
+					}
+				}
+			}
+		}
+	} else if (actionSignal == 'R') {
+		*keys = *keys & 1110; 		// ~KEY[0]
+    1560:	1080158c 	andi	r2,r2,86
+    1564:	18800005 	stb	r2,0(r3)
+		alt_printf("\nSYSTEM RESET\n");
+    1568:	00016f80 	call	16f8 <alt_printf>
+	}
+
+	return 0;
+}
+    156c:	0005883a 	mov	r2,zero
+    1570:	dfc00517 	ldw	ra,20(sp)
+    1574:	dd000417 	ldw	r20,16(sp)
+    1578:	dcc00317 	ldw	r19,12(sp)
+    157c:	dc800217 	ldw	r18,8(sp)
+    1580:	dc400117 	ldw	r17,4(sp)
+    1584:	dc000017 	ldw	r16,0(sp)
+    1588:	dec00604 	addi	sp,sp,24
+    158c:	f800283a 	ret
+
+00001590 <alt_getchar>:
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
+    char c;
+
+    if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
+    1590:	00800034 	movhi	r2,0
+    1594:	10871c04 	addi	r2,r2,7280
+    1598:	11c00217 	ldw	r7,8(r2)
+ * Uses the ALT_DRIVER_READ() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided getchar() routine.
+ */
+int 
+alt_getchar(void)
+{
+    159c:	defffe04 	addi	sp,sp,-8
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
+    char c;
+
+    if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
+    15a0:	01000034 	movhi	r4,0
+    15a4:	21073204 	addi	r4,r4,7368
+    15a8:	d80b883a 	mov	r5,sp
+    15ac:	01800044 	movi	r6,1
+ * Uses the ALT_DRIVER_READ() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided getchar() routine.
+ */
+int 
+alt_getchar(void)
+{
+    15b0:	dfc00115 	stw	ra,4(sp)
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
+    char c;
+
+    if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
+    15b4:	00018d00 	call	18d0 <altera_avalon_jtag_uart_read>
+    15b8:	0080020e 	bge	zero,r2,15c4 <alt_getchar+0x34>
+        return -1;
+    }
+    return c;
+    15bc:	d8800007 	ldb	r2,0(sp)
+    15c0:	00000106 	br	15c8 <alt_getchar+0x38>
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
+    char c;
+
+    if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
+        return -1;
+    15c4:	00bfffc4 	movi	r2,-1
+    return c;
+#else
+    return getchar();
+#endif
+#endif
+}
+    15c8:	dfc00117 	ldw	ra,4(sp)
+    15cc:	dec00204 	addi	sp,sp,8
+    15d0:	f800283a 	ret
+
+000015d4 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    15d4:	deffff04 	addi	sp,sp,-4
+    15d8:	01000034 	movhi	r4,0
+    15dc:	01400034 	movhi	r5,0
+    15e0:	dfc00015 	stw	ra,0(sp)
+    15e4:	21071c04 	addi	r4,r4,7280
+    15e8:	29473804 	addi	r5,r5,7392
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    15ec:	2140061e 	bne	r4,r5,1608 <alt_load+0x34>
+    15f0:	01000034 	movhi	r4,0
+    15f4:	01400034 	movhi	r5,0
+    15f8:	21040804 	addi	r4,r4,4128
+    15fc:	29440804 	addi	r5,r5,4128
+    1600:	2140141e 	bne	r4,r5,1654 <alt_load+0x80>
+    1604:	00000d06 	br	163c <alt_load+0x68>
+    1608:	00c00034 	movhi	r3,0
+    160c:	18c73804 	addi	r3,r3,7392
+    1610:	00bfff04 	movi	r2,-4
+    1614:	1907c83a 	sub	r3,r3,r4
+    1618:	1886703a 	and	r3,r3,r2
+    161c:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    1620:	10fff326 	beq	r2,r3,15f0 <_gp+0xffff7928>
+    1624:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    1628:	39c00017 	ldw	r7,0(r7)
+    162c:	110d883a 	add	r6,r2,r4
+    1630:	10800104 	addi	r2,r2,4
+    1634:	31c00015 	stw	r7,0(r6)
+    1638:	003ff906 	br	1620 <_gp+0xffff7958>
+    163c:	01000034 	movhi	r4,0
+    1640:	01400034 	movhi	r5,0
+    1644:	21065e04 	addi	r4,r4,6520
+    1648:	29465e04 	addi	r5,r5,6520
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    164c:	2140121e 	bne	r4,r5,1698 <alt_load+0xc4>
+    1650:	00000d06 	br	1688 <alt_load+0xb4>
+    1654:	00c00034 	movhi	r3,0
+    1658:	18c40804 	addi	r3,r3,4128
+    165c:	00bfff04 	movi	r2,-4
+    1660:	1907c83a 	sub	r3,r3,r4
+    1664:	1886703a 	and	r3,r3,r2
+    1668:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    166c:	10fff326 	beq	r2,r3,163c <_gp+0xffff7974>
+    1670:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    1674:	39c00017 	ldw	r7,0(r7)
+    1678:	110d883a 	add	r6,r2,r4
+    167c:	10800104 	addi	r2,r2,4
+    1680:	31c00015 	stw	r7,0(r6)
+    1684:	003ff906 	br	166c <_gp+0xffff79a4>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    1688:	00019600 	call	1960 <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    168c:	dfc00017 	ldw	ra,0(sp)
+    1690:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+    1694:	000196c1 	jmpi	196c <alt_icache_flush_all>
+    1698:	00c00034 	movhi	r3,0
+    169c:	18c71c04 	addi	r3,r3,7280
+    16a0:	00bfff04 	movi	r2,-4
+    16a4:	1907c83a 	sub	r3,r3,r4
+    16a8:	1886703a 	and	r3,r3,r2
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    16ac:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    16b0:	10fff526 	beq	r2,r3,1688 <_gp+0xffff79c0>
+    16b4:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    16b8:	39c00017 	ldw	r7,0(r7)
+    16bc:	110d883a 	add	r6,r2,r4
+    16c0:	10800104 	addi	r2,r2,4
+    16c4:	31c00015 	stw	r7,0(r6)
+    16c8:	003ff906 	br	16b0 <_gp+0xffff79e8>
+
+000016cc <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    16cc:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    16d0:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    16d4:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    16d8:	00018ac0 	call	18ac <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    16dc:	00018cc0 	call	18cc <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    16e0:	d1202417 	ldw	r4,-32624(gp)
+    16e4:	d1602317 	ldw	r5,-32628(gp)
+    16e8:	d1a02217 	ldw	r6,-32632(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    16ec:	dfc00017 	ldw	ra,0(sp)
+    16f0:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    16f4:	000105c1 	jmpi	105c <main>
+
+000016f8 <alt_printf>:
+/* 
+ * ALT printf function 
+ */
+void 
+alt_printf(const char* fmt, ... )
+{
+    16f8:	defff204 	addi	sp,sp,-56
+    16fc:	dfc00a15 	stw	ra,40(sp)
+    1700:	df000915 	stw	fp,36(sp)
+    1704:	ddc00815 	stw	r23,32(sp)
+    1708:	dd800715 	stw	r22,28(sp)
+    170c:	dd400615 	stw	r21,24(sp)
+    1710:	dd000515 	stw	r20,20(sp)
+    1714:	dcc00415 	stw	r19,16(sp)
+    1718:	dc800315 	stw	r18,12(sp)
+    171c:	dc400215 	stw	r17,8(sp)
+    1720:	dc000115 	stw	r16,4(sp)
+    1724:	d9400b15 	stw	r5,44(sp)
+    1728:	d9800c15 	stw	r6,48(sp)
+    172c:	d9c00d15 	stw	r7,52(sp)
+    w = fmt;
+    while ((c = *w++) != 0)
+    {
+        /* If not a format escape character, just print  */
+        /* character.  Otherwise, process format string. */
+        if (c != '%')
+    1730:	04000944 	movi	r16,37
+/* 
+ * ALT printf function 
+ */
+void 
+alt_printf(const char* fmt, ... )
+{
+    1734:	2005883a 	mov	r2,r4
+	va_list args;
+	va_start(args, fmt);
+    1738:	dd400b04 	addi	r21,sp,44
+                if (c == '%')
+                {
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+    173c:	048018c4 	movi	r18,99
+                {
+                    int v = va_arg(args, int);
+                    alt_putchar(v);
+                }
+                else if (c == 'x')
+    1740:	04c01e04 	movi	r19,120
+                        else
+                            c = 'a' + digit - 10;
+                        alt_putchar(c);
+                    }
+                }
+                else if (c == 's')
+    1744:	05001cc4 	movi	r20,115
+    const char *w;
+    char c;
+
+    /* Process format string. */
+    w = fmt;
+    while ((c = *w++) != 0)
+    1748:	11000007 	ldb	r4,0(r2)
+    174c:	20003926 	beq	r4,zero,1834 <alt_printf+0x13c>
+    {
+        /* If not a format escape character, just print  */
+        /* character.  Otherwise, process format string. */
+        if (c != '%')
+    1750:	24000226 	beq	r4,r16,175c <alt_printf+0x64>
+    const char *w;
+    char c;
+
+    /* Process format string. */
+    w = fmt;
+    while ((c = *w++) != 0)
+    1754:	14400044 	addi	r17,r2,1
+    1758:	00001106 	br	17a0 <alt_printf+0xa8>
+        }
+        else
+        {
+            /* Get format character.  If none     */
+            /* available, processing is complete. */
+            if ((c = *w++) != 0)
+    175c:	14400084 	addi	r17,r2,2
+    1760:	10800047 	ldb	r2,1(r2)
+    1764:	10003326 	beq	r2,zero,1834 <alt_printf+0x13c>
+            {
+                if (c == '%')
+    1768:	1400021e 	bne	r2,r16,1774 <alt_printf+0x7c>
+                {
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+    176c:	8009883a 	mov	r4,r16
+    1770:	00000b06 	br	17a0 <alt_printf+0xa8>
+                } 
+                else if (c == 'c')
+    1774:	1480051e 	bne	r2,r18,178c <alt_printf+0x94>
+                {
+                    int v = va_arg(args, int);
+                    alt_putchar(v);
+    1778:	a9000017 	ldw	r4,0(r21)
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+                {
+                    int v = va_arg(args, int);
+    177c:	ad800104 	addi	r22,r21,4
+    1780:	b02b883a 	mov	r21,r22
+                    alt_putchar(v);
+    1784:	00018640 	call	1864 <alt_putchar>
+    1788:	00002806 	br	182c <alt_printf+0x134>
+                }
+                else if (c == 'x')
+    178c:	14c01f1e 	bne	r2,r19,180c <alt_printf+0x114>
+                {
+                    /* Process hexadecimal number format. */
+                    unsigned long v = va_arg(args, unsigned long);
+    1790:	adc00017 	ldw	r23,0(r21)
+    1794:	ad400104 	addi	r21,r21,4
+                    unsigned long digit;
+                    int digit_shift;
+
+                    /* If the number value is zero, just print and continue. */
+                    if (v == 0)
+    1798:	b800031e 	bne	r23,zero,17a8 <alt_printf+0xb0>
+                    {
+                        alt_putchar('0');
+    179c:	01000c04 	movi	r4,48
+    17a0:	00018640 	call	1864 <alt_putchar>
+                        continue;
+    17a4:	00002106 	br	182c <alt_printf+0x134>
+    17a8:	05800704 	movi	r22,28
+                    }
+
+                    /* Find first non-zero digit. */
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+    17ac:	00c003c4 	movi	r3,15
+    17b0:	1d84983a 	sll	r2,r3,r22
+    17b4:	15c4703a 	and	r2,r2,r23
+    17b8:	1000021e 	bne	r2,zero,17c4 <alt_printf+0xcc>
+                        digit_shift -= 4;
+    17bc:	b5bfff04 	addi	r22,r22,-4
+    17c0:	003ffb06 	br	17b0 <_gp+0xffff7ae8>
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+                    {
+                        digit = (v & (0xF << digit_shift)) >> digit_shift;
+    17c4:	070003c4 	movi	fp,15
+                        if (digit <= 9)
+    17c8:	00c00244 	movi	r3,9
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+                        digit_shift -= 4;
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+    17cc:	b0001716 	blt	r22,zero,182c <alt_printf+0x134>
+                    {
+                        digit = (v & (0xF << digit_shift)) >> digit_shift;
+    17d0:	e584983a 	sll	r2,fp,r22
+    17d4:	15c4703a 	and	r2,r2,r23
+    17d8:	1584d83a 	srl	r2,r2,r22
+                        if (digit <= 9)
+    17dc:	18800236 	bltu	r3,r2,17e8 <alt_printf+0xf0>
+                            c = '0' + digit;
+    17e0:	11000c04 	addi	r4,r2,48
+    17e4:	00000106 	br	17ec <alt_printf+0xf4>
+                        else
+                            c = 'a' + digit - 10;
+    17e8:	110015c4 	addi	r4,r2,87
+                        alt_putchar(c);
+    17ec:	21003fcc 	andi	r4,r4,255
+    17f0:	2100201c 	xori	r4,r4,128
+    17f4:	213fe004 	addi	r4,r4,-128
+    17f8:	d8c00015 	stw	r3,0(sp)
+    17fc:	00018640 	call	1864 <alt_putchar>
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+                        digit_shift -= 4;
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+    1800:	b5bfff04 	addi	r22,r22,-4
+    1804:	d8c00017 	ldw	r3,0(sp)
+    1808:	003ff006 	br	17cc <_gp+0xffff7b04>
+                        else
+                            c = 'a' + digit - 10;
+                        alt_putchar(c);
+                    }
+                }
+                else if (c == 's')
+    180c:	1500071e 	bne	r2,r20,182c <alt_printf+0x134>
+                {
+                    /* Process string format. */
+                    char *s = va_arg(args, char *);
+    1810:	ad800017 	ldw	r22,0(r21)
+    1814:	ad400104 	addi	r21,r21,4
+
+                    while(*s)
+    1818:	b1000007 	ldb	r4,0(r22)
+    181c:	20000326 	beq	r4,zero,182c <alt_printf+0x134>
+                      alt_putchar(*s++);
+    1820:	b5800044 	addi	r22,r22,1
+    1824:	00018640 	call	1864 <alt_putchar>
+    1828:	003ffb06 	br	1818 <_gp+0xffff7b50>
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+                {
+                    int v = va_arg(args, int);
+    182c:	8805883a 	mov	r2,r17
+    1830:	003fc506 	br	1748 <_gp+0xffff7a80>
+        }
+    }
+#ifdef ALT_SEMIHOSTING
+    alt_putbufflush();
+#endif
+}
+    1834:	dfc00a17 	ldw	ra,40(sp)
+    1838:	df000917 	ldw	fp,36(sp)
+    183c:	ddc00817 	ldw	r23,32(sp)
+    1840:	dd800717 	ldw	r22,28(sp)
+    1844:	dd400617 	ldw	r21,24(sp)
+    1848:	dd000517 	ldw	r20,20(sp)
+    184c:	dcc00417 	ldw	r19,16(sp)
+    1850:	dc800317 	ldw	r18,12(sp)
+    1854:	dc400217 	ldw	r17,8(sp)
+    1858:	dc000117 	ldw	r16,4(sp)
+    185c:	dec00e04 	addi	sp,sp,56
+    1860:	f800283a 	ret
+
+00001864 <alt_putchar>:
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    1864:	defffd04 	addi	sp,sp,-12
+    1868:	dc000115 	stw	r16,4(sp)
+	char        c1 = (char)(c & 0xff);
+    return write(STDOUT_FILENO,&c1,1);
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+    186c:	d9000005 	stb	r4,0(sp)
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    1870:	2021883a 	mov	r16,r4
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    1874:	01000034 	movhi	r4,0
+    1878:	21073204 	addi	r4,r4,7368
+    187c:	d80b883a 	mov	r5,sp
+    1880:	01800044 	movi	r6,1
+    1884:	000f883a 	mov	r7,zero
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    1888:	dfc00215 	stw	ra,8(sp)
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    188c:	000192c0 	call	192c <altera_avalon_jtag_uart_write>
+    1890:	00ffffc4 	movi	r3,-1
+    1894:	10c00126 	beq	r2,r3,189c <alt_putchar+0x38>
+        return -1;
+    }
+    return c;
+    1898:	8005883a 	mov	r2,r16
+#else
+    return putchar(c);
+#endif
+#endif
+}
+    189c:	dfc00217 	ldw	ra,8(sp)
+    18a0:	dc000117 	ldw	r16,4(sp)
+    18a4:	dec00304 	addi	sp,sp,12
+    18a8:	f800283a 	ret
+
+000018ac <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    18ac:	deffff04 	addi	sp,sp,-4
+    18b0:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS2_PROCESSOR, nios2_processor);
+    18b4:	00019700 	call	1970 <altera_nios2_qsys_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts (void)
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    18b8:	00800044 	movi	r2,1
+    18bc:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    18c0:	dfc00017 	ldw	ra,0(sp)
+    18c4:	dec00104 	addi	sp,sp,4
+    18c8:	f800283a 	ret
+
+000018cc <alt_sys_init>:
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
+ */
+
+void alt_sys_init( void )
+{
+    18cc:	f800283a 	ret
+
+000018d0 <altera_avalon_jtag_uart_read>:
+
+int 
+altera_avalon_jtag_uart_read(altera_avalon_jtag_uart_state* sp, 
+  char* buffer, int space, int flags)
+{
+  unsigned int base = sp->base;
+    18d0:	21000017 	ldw	r4,0(r4)
+
+  char * ptr = buffer;
+  char * end = buffer + space;
+    18d4:	298d883a 	add	r6,r5,r6
+
+  while (ptr < end)
+    18d8:	2805883a 	mov	r2,r5
+
+    if (data & ALTERA_AVALON_JTAG_UART_DATA_RVALID_MSK)
+      *ptr++ = (data & ALTERA_AVALON_JTAG_UART_DATA_DATA_MSK) >> ALTERA_AVALON_JTAG_UART_DATA_DATA_OFST;
+    else if (ptr != buffer)
+      break;
+    else if(flags & O_NONBLOCK)
+    18dc:	3a10000c 	andi	r8,r7,16384
+  unsigned int base = sp->base;
+
+  char * ptr = buffer;
+  char * end = buffer + space;
+
+  while (ptr < end)
+    18e0:	11800b2e 	bgeu	r2,r6,1910 <altera_avalon_jtag_uart_read+0x40>
+  {
+    unsigned int data = IORD_ALTERA_AVALON_JTAG_UART_DATA(base);
+    18e4:	20c00037 	ldwio	r3,0(r4)
+
+    if (data & ALTERA_AVALON_JTAG_UART_DATA_RVALID_MSK)
+    18e8:	1a60000c 	andi	r9,r3,32768
+    18ec:	48000326 	beq	r9,zero,18fc <altera_avalon_jtag_uart_read+0x2c>
+      *ptr++ = (data & ALTERA_AVALON_JTAG_UART_DATA_DATA_MSK) >> ALTERA_AVALON_JTAG_UART_DATA_DATA_OFST;
+    18f0:	10c00005 	stb	r3,0(r2)
+    18f4:	10800044 	addi	r2,r2,1
+    18f8:	003ff906 	br	18e0 <_gp+0xffff7c18>
+    else if (ptr != buffer)
+    18fc:	11400226 	beq	r2,r5,1908 <altera_avalon_jtag_uart_read+0x38>
+      break;   
+    
+  }
+
+  if (ptr != buffer)
+    return ptr - buffer;
+    1900:	1145c83a 	sub	r2,r2,r5
+    1904:	f800283a 	ret
+
+    if (data & ALTERA_AVALON_JTAG_UART_DATA_RVALID_MSK)
+      *ptr++ = (data & ALTERA_AVALON_JTAG_UART_DATA_DATA_MSK) >> ALTERA_AVALON_JTAG_UART_DATA_DATA_OFST;
+    else if (ptr != buffer)
+      break;
+    else if(flags & O_NONBLOCK)
+    1908:	403ff526 	beq	r8,zero,18e0 <_gp+0xffff7c18>
+    190c:	00000106 	br	1914 <altera_avalon_jtag_uart_read+0x44>
+      break;   
+    
+  }
+
+  if (ptr != buffer)
+    1910:	117ffb1e 	bne	r2,r5,1900 <_gp+0xffff7c38>
+    return ptr - buffer;
+  else if (flags & O_NONBLOCK)
+    1914:	39d0000c 	andi	r7,r7,16384
+    1918:	3800021e 	bne	r7,zero,1924 <altera_avalon_jtag_uart_read+0x54>
+    return -EWOULDBLOCK;
+  else
+    return -EIO;
+    191c:	00bffec4 	movi	r2,-5
+    1920:	f800283a 	ret
+  }
+
+  if (ptr != buffer)
+    return ptr - buffer;
+  else if (flags & O_NONBLOCK)
+    return -EWOULDBLOCK;
+    1924:	00bffd44 	movi	r2,-11
+  else
+    return -EIO;
+}
+    1928:	f800283a 	ret
+
+0000192c <altera_avalon_jtag_uart_write>:
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+  unsigned int base = sp->base;
+    192c:	21000017 	ldw	r4,0(r4)
+ * one FIFOs worth of data.  But you said you didn't want to use interrupts :-)
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+    1930:	3005883a 	mov	r2,r6
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+    1934:	298d883a 	add	r6,r5,r6
+
+  while (ptr < end)
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    1938:	21c00104 	addi	r7,r4,4
+{
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+
+  while (ptr < end)
+    193c:	2980072e 	bgeu	r5,r6,195c <altera_avalon_jtag_uart_write+0x30>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    1940:	38c00037 	ldwio	r3,0(r7)
+    1944:	18ffffec 	andhi	r3,r3,65535
+    1948:	183ffc26 	beq	r3,zero,193c <_gp+0xffff7c74>
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+    194c:	28c00007 	ldb	r3,0(r5)
+    1950:	20c00035 	stwio	r3,0(r4)
+    1954:	29400044 	addi	r5,r5,1
+    1958:	003ff806 	br	193c <_gp+0xffff7c74>
+
+  return count;
+}
+    195c:	f800283a 	ret
+
+00001960 <alt_dcache_flush_all>:
+/*
+ * alt_dcache_flush_all() is called to flush the entire data cache.
+ */
+
+void alt_dcache_flush_all (void)
+{
+    1960:	f800283a 	ret
+
+00001964 <alt_dev_null_write>:
+ */
+
+static int alt_dev_null_write (alt_fd* fd, const char* ptr, int len)
+{
+  return len;
+}
+    1964:	3005883a 	mov	r2,r6
+    1968:	f800283a 	ret
+
+0000196c <alt_icache_flush_all>:
+/*
+ * alt_icache_flush_all() is called to flush the entire instruction cache.
+ */
+
+void alt_icache_flush_all (void)
+{
+    196c:	f800283a 	ret
+
+00001970 <altera_nios2_qsys_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_qsys_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    1970:	000170fa 	wrctl	ienable,zero
+    1974:	f800283a 	ret

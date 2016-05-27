@@ -1,0 +1,9 @@
+15:42:01 **** Build of configuration Nios II for project bathysphere_eclipse3 ****
+make all 
+Info: Building ../bathysphere_eclipse3_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bathysphere_eclipse3_bsp/
+[BSP build complete]
+[bathysphere_eclipse3 build complete]
+
+15:42:02 Build Finished (took 700ms)
+

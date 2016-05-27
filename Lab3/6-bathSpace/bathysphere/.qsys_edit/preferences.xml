@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1443" height="987" x="336" y="144" />
+ <hdlexample language="VERILOG" />
+ <generation path="C:/Users/xiaoh3/Desktop/271_file/Lab1_files" />
+</preferences>

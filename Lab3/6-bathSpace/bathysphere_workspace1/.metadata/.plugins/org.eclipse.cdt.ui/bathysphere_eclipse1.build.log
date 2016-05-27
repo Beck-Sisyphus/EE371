@@ -1,0 +1,9 @@
+05:15:21 **** Incremental Build of configuration Nios II for project bathysphere_eclipse1 ****
+make all 
+Info: Building ../bathysphere_eclipse1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bathysphere_eclipse1_bsp/
+[BSP build complete]
+[bathysphere_eclipse1 build complete]
+
+05:15:22 Build Finished (took 610ms)
+

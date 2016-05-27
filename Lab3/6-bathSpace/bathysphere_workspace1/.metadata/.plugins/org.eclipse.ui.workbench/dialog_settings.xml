@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1029" key="dialogHeight"/>
+		<item value="1920" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="2"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.debug.ui.actions.OpenRunConfigurations"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.actions"/>
+		</list>
+		<list key="textArray">
+			<item value="configuration"/>
+			<item value="conf"/>
+		</list>
+	</section>
+</section>

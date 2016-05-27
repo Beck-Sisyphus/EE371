@@ -1,0 +1,24 @@
+
+State Machine - |bathysphere|DE1_SoC:d1|interlock:inter|ps
+Name ps~19 ps~18 ps~17 ps~16 
+ps.firstStep 0 0 0 0 
+ps.highPressure 0 0 1 1 
+ps.checkOuterOpen 0 0 1 0 
+ps.checkOuterClose 0 1 0 1 
+ps.checkInnerClose 0 1 1 1 
+ps.outerOpen 0 1 1 0 
+ps.innerOpen 1 0 0 1 
+ps.pressurizeTimer 1 0 0 0 
+ps.evacuateTimer 1 0 1 1 
+ps.waiting5min 1 0 1 0 
+ps.closedInnerPort 1 1 0 1 
+ps.complete 1 1 1 0 
+
+State Machine - |bathysphere|nios_system:u0|nios_system_nios2_processor:nios2_processor|nios_system_nios2_processor_nios2_oci:the_nios_system_nios2_processor_nios2_oci|nios_system_nios2_processor_jtag_debug_module_wrapper:the_nios_system_nios2_processor_jtag_debug_module_wrapper|nios_system_nios2_processor_jtag_debug_module_tck:the_nios_system_nios2_processor_jtag_debug_module_tck|DRsize
+Name DRsize~5 DRsize~4 DRsize~3 
+DRsize.000 0 0 0 
+DRsize.001 0 0 1 
+DRsize.010 0 1 0 
+DRsize.011 0 1 1 
+DRsize.100 1 0 0 
+DRsize.101 1 0 1 

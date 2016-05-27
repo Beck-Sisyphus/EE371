@@ -1,0 +1,540 @@
+Archive member included to satisfy reference by file (symbol)
+
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+                              obj/default/hello_world_small.o (alt_getchar)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+                              ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o (alt_load)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+                              ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o (alt_main)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+                              obj/default/hello_world_small.o (alt_printf)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o) (alt_putchar)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+                              obj/default/hello_world_small.o (alt_putstr)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o) (altera_avalon_jtag_uart_read)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o) (altera_avalon_jtag_uart_write)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o) (alt_fd_list)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o) (strlen)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000001000 0x0000000000000020
+onchip_memory    0x0000000000001020 0x0000000000000fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+LOAD ../advanced_light_eclipse_bsp/\libhal_bsp.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+                0x0000000000001000                __alt_mem_onchip_memory = 0x1000
+
+.entry          0x0000000000001000       0x20
+ *(.entry)
+ .entry         0x0000000000001000       0x20 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+                0x0000000000001000                __reset
+                0x000000000000100c                _exit
+
+.exceptions     0x0000000000001020        0x0
+                0x0000000000001020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000001020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x0000000000001020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000001020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000001020      0x4dc
+                0x0000000000001020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000001020       0x3c ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+                0x0000000000001020                _start
+ .text          0x000000000000105c        0x0 obj/default/hello_world_small.o
+ .text.startup  0x000000000000105c       0x64 obj/default/hello_world_small.o
+                0x000000000000105c                main
+ .text          0x00000000000010c0       0x44 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+                0x00000000000010c0                alt_getchar
+ .text          0x0000000000001104       0xf8 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000001104                alt_load
+ .text          0x00000000000011fc       0x2c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000011fc                alt_main
+ .text          0x0000000000001228      0x16c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+                0x0000000000001228                alt_printf
+ .text          0x0000000000001394       0x48 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+                0x0000000000001394                alt_putchar
+ .text          0x00000000000013dc       0x38 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x00000000000013dc                alt_putstr
+ .text          0x0000000000001414       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000001414                alt_irq_init
+                0x0000000000001434                alt_sys_init
+ .text          0x0000000000001438       0x5c ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000000000001438                altera_avalon_jtag_uart_read
+ .text          0x0000000000001494       0x34 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000001494                altera_avalon_jtag_uart_write
+ .text          0x00000000000014c8        0x4 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000014c8                alt_dcache_flush_all
+ .text          0x00000000000014cc        0x8 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00000000000014d4        0x4 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00000000000014d4                alt_icache_flush_all
+ .text          0x00000000000014d8        0x8 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00000000000014d8                altera_nios2_qsys_irq_init
+ .text          0x00000000000014e0        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x00000000000014e0       0x1c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x00000000000014e0                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00000000000014fc                PROVIDE (__etext, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (_etext, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00000000000014fc                . = ALIGN (0x4)
+                0x00000000000014fc                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00000000000014fc                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00000000000014fc                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00000000000014fc                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x00000000000014fc                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00000000000014fc                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00000000000014fc                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00000000000014fc                . = ALIGN (0x4)
+
+.rodata         0x00000000000014fc       0x38
+                0x00000000000014fc                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00000000000014fc                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000000000014fc       0x2b obj/default/hello_world_small.o
+                                         0x2c (size before relaxing)
+ *fill*         0x0000000000001527        0x1 
+ .rodata.str1.4
+                0x0000000000001528        0xc ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000000000001534                . = ALIGN (0x4)
+                0x0000000000001534                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00000000000014fc                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000000001534       0x70 load address 0x00000000000015a4
+                0x0000000000001534                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000001534                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000001534        0x0 obj/default/hello_world_small.o
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000001534        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000001534       0x58 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000001534                alt_fd_list
+                0x0000000000001564                alt_dev_null
+ .data          0x000000000000158c        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000000000000158c        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x000000000000158c        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x000000000000958c                _gp = ABSOLUTE ((. + 0x8000))
+                0x000000000000958c                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000000000000158c        0x4 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000000158c                jtag_uart
+ .sdata         0x0000000000001590       0x14 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000001590                alt_max_fd
+                0x0000000000001594                alt_dev_list
+                0x000000000000159c                alt_fs_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00000000000015a4                . = ALIGN (0x4)
+                0x00000000000015a4                _edata = ABSOLUTE (.)
+                0x00000000000015a4                PROVIDE (edata, ABSOLUTE (.))
+                0x00000000000015a4                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00000000000015a4                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000001614        0xc
+                0x0000000000001614                __bss_start = ABSOLUTE (.)
+                0x0000000000001614                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000000000001614                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000001614        0xc ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000001614                alt_envp
+                0x0000000000001618                alt_argv
+                0x000000000000161c                alt_argc
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000000000001620                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000000000001620                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000001620        0x0 obj/default/hello_world_small.o
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000001620        0x0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x0000000000001620        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+                0x0000000000001620                . = ALIGN (0x4)
+                0x0000000000001620                __bss_end = ABSOLUTE (.)
+
+.onchip_memory  0x0000000000001620        0x0
+                0x0000000000001620                PROVIDE (_alt_partition_onchip_memory_start, ABSOLUTE (.))
+ *(.onchip_memory .onchip_memory. onchip_memory.*)
+                0x0000000000001620                . = ALIGN (0x4)
+                0x0000000000001620                PROVIDE (_alt_partition_onchip_memory_end, ABSOLUTE (.))
+                0x0000000000001620                _end = ABSOLUTE (.)
+                0x0000000000001620                end = ABSOLUTE (.)
+                0x0000000000001620                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000001620                PROVIDE (_alt_partition_onchip_memory_load_addr, LOADADDR (.onchip_memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/hello_world_small.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x208
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/hello_world_small.o
+ .debug_aranges
+                0x0000000000000048       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_aranges
+                0x0000000000000068       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000088       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_aranges
+                0x0000000000000108       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000128       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000148       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000168       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000188       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000000000001e8       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x1765
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x8e ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x000000000000008e       0xd3 obj/default/hello_world_small.o
+ .debug_info    0x0000000000000161      0x33b ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_info    0x000000000000049c      0x1ba ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000000656      0x17b ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000007d1      0x153 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_info    0x0000000000000924      0x138 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_info    0x0000000000000a5c      0x15d ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x0000000000000bb9      0x17a ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000000d33      0x1ad ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000000ee0      0x190 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000001070       0x8b ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000000000010fb      0x492 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x000000000000158d       0x8b ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000001618       0x8b ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x00000000000016a3       0xc2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x0000000000000000      0xb85
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012       0xcc obj/default/hello_world_small.o
+ .debug_abbrev  0x00000000000000de      0x11f ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_abbrev  0x00000000000001fd       0xd8 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000000000002d5      0x120 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000003f5       0xde ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_abbrev  0x00000000000004d3       0xd4 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_abbrev  0x00000000000005a7       0xe2 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_abbrev  0x0000000000000689      0x107 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000000790      0x102 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x0000000000000892       0xd5 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000000000000967       0x42 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000009a9       0xd9 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000000a82       0x42 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000000ac4       0x42 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x0000000000000b06       0x7f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x0000000000000000      0xb7f
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066       0x8b obj/default/hello_world_small.o
+ .debug_line    0x00000000000000f1       0xb7 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_line    0x00000000000001a8       0xa6 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000000000000024e       0xbd ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000000000000030b      0x108 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_line    0x0000000000000413       0x55 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x0000000000000468       0xf5 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x000000000000055d      0x101 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000000000000065e       0xfb ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000000759       0xf0 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000000849       0x4e ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000000897       0xee ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000000985       0x4e ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000000000009d3       0x50 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x0000000000000a23      0x15c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x280
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x28 obj/default/hello_world_small.o
+ .debug_frame   0x0000000000000028       0x2c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_frame   0x0000000000000054       0x30 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000084       0x2c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000000b0       0x54 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_frame   0x0000000000000104       0x30 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_frame   0x0000000000000134       0x30 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_frame   0x0000000000000164       0x3c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000001a0       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000000000001c0       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000000000001e0       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000200       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000220       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000240       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x0000000000000260       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x0000000000000000      0x83e
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xcb obj/default/hello_world_small.o
+                                         0xd5 (size before relaxing)
+ .debug_str     0x00000000000000cb      0x1a6 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_getchar.o)
+                                        0x239 (size before relaxing)
+ .debug_str     0x0000000000000271      0x11b ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x23f (size before relaxing)
+ .debug_str     0x000000000000038c       0x5e ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1b8 (size before relaxing)
+ .debug_str     0x00000000000003ea       0x59 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+                                        0x115 (size before relaxing)
+ .debug_str     0x0000000000000443       0x34 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+                                        0x18e (size before relaxing)
+ .debug_str     0x0000000000000477       0x23 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+                                        0x19a (size before relaxing)
+ .debug_str     0x000000000000049a       0x86 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x227 (size before relaxing)
+ .debug_str     0x0000000000000520       0x3d ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x222 (size before relaxing)
+ .debug_str     0x000000000000055d       0x32 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x218 (size before relaxing)
+ .debug_str     0x000000000000058f       0x1f ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x158 (size before relaxing)
+ .debug_str     0x00000000000005ae      0x120 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x308 (size before relaxing)
+ .debug_str     0x00000000000006ce       0x1f ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x158 (size before relaxing)
+ .debug_str     0x00000000000006ed       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                        0x15f (size before relaxing)
+ .debug_str     0x000000000000070d      0x131 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x1d7 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x3d3
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x13 obj/default/hello_world_small.o
+ .debug_loc     0x0000000000000013      0x1c6 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_loc     0x00000000000001d9       0x2c ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_loc     0x0000000000000205       0x37 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loc     0x000000000000023c       0x21 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x000000000000025d       0xcd ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x000000000000032a       0x8b ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x00000000000003b5       0x1e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+                0x0000000000002000                __alt_data_end = 0x2000
+                0x0000000000002000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000000000001620                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000000000001620                PROVIDE (__alt_heap_start, end)
+                0x0000000000002000                PROVIDE (__alt_heap_limit, 0x2000)
+OUTPUT(advanced_light_eclipse.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000       0xc0
+ .debug_ranges  0x0000000000000000       0x20 ../advanced_light_eclipse_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x10 obj/default/hello_world_small.o
+ .debug_ranges  0x0000000000000030       0x48 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000078       0x18 ../advanced_light_eclipse_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_ranges  0x0000000000000090       0x20 ../advanced_light_eclipse_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x00000000000000b0       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)

@@ -1,0 +1,1360 @@
+!SESSION 2016-05-13 11:40:27.110 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 11:40:38.935
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 11:40:38.945
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-13 11:41:31.116
+!MESSAGE Indexed 'bathysphere_eclipse3_bsp' (79 sources, 63 headers) in 0.91 sec: 1,202 declarations; 2,480 references; 109 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.93%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-13 11:41:32.646
+!MESSAGE Indexed 'bathysphere_eclipse3' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 11:44:36.215
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:44:38.973
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 11:44:39.203
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:44:42.031
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:44:42.040
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 11:54:27.347
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:54:29.924
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 11:54:30.154
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:54:33.159
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 11:54:33.169
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:00:20.584
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:00:22.418
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:07:28.124
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:07:29.825
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:09:12.876
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:09:14.513
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:18:31.610
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:18:33.443
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:23:40.065
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:23:41.927
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:25:17.332
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:25:19.094
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:27:52.648
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:27:54.389
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:31:16.325
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:31:16.703
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:31:18.452
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:32:09.226
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:32:11.159
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:35:14.261
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:35:14.729
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:35:16.453
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:40:39.647
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:40:40.117
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:40:41.866
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:41:25.926
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:41:27.836
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:44:45.200
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:44:45.661
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:44:47.583
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:05.376
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:05.842
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:07.687
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:57.637
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:58.019
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:54:59.720
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:55:37.030
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:55:37.372
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:55:39.062
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:56:01.883
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:56:02.293
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:56:04.026
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:58:47.591
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:58:48.001
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:58:49.706
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:59:02.650
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:59:02.986
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 12:59:04.743
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:11.016
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:11.432
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:13.289
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:48.207
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:48.498
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:23:50.279
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:25:12.648
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:25:13.604
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:25:15.271
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:25:59.340
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:01.233
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:26.038
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:26.439
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:28.253
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:55.399
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:55.809
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:26:57.494
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-05-13 13:28:03.459
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element hello_world_small.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:566)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:367)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:358)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2016-05-13 13:28:03.459
+!MESSAGE Element hello_world_small.c does not exist.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:30:22.066
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:30:23.748
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:31:30.770
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:31:31.721
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:31:33.403
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:19.856
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:20.241
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:20.507
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:21.998
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:22.298
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:55.256
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:55.256
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:55.637
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:33:57.438
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:34:29.987
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:34:30.377
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:34:32.109
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:38:38.622
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:38:39.011
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:38:40.813
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:39:56.994
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:39:57.362
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:39:59.036
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:41:40.945
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:41:41.332
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:41:41.615
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:41:42.987
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:41:43.317
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:42:32.076
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:42:32.076
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:42:32.406
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:42:34.148
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:05.881
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:06.331
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:08.074
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:32.849
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:33.218
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:34.910
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:43:59.871
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:44:00.332
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:44:02.195
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:00.431
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:00.801
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:02.533
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:15.051
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:15.411
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:17.154
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:26.861
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:27.304
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:45:29.167
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:50:14.500
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:50:14.960
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:50:16.714
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:51:20.057
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:51:20.558
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:51:22.299
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:53:44.268
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:53:44.768
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:53:46.481
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:54:07.501
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:54:07.844
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:54:08.694
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:54:09.553
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:54:10.346
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:11.031
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:11.031
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:11.412
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:13.097
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:38.952
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:39.341
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:56:41.064
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:57:12.399
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:57:12.799
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:57:14.543
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:58:38.949
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:58:39.407
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:58:41.042
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:12.419
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:12.779
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:14.583
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:37.576
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:37.935
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:39.737
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:54.878
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:55.188
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 13:59:56.710
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:07.179
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:07.510
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:09.344
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:20.397
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:20.747
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:22.429
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:32.277
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:32.678
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:34.430
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:44.890
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:45.280
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:47.000
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:56.321
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:56.662
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:00:58.503
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 14:01:35.866 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 14:02:40.261
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:02:46.805
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:02:46.807
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:03:07.116
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:03:09.189
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:03:09.362
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:03:22.807
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:03:23.167
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:03:25.187
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:03:25.349
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:04:48.670
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:04:49.031
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:04:51.242
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:04:51.412
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:05:25.273
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:05:25.663
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:05:27.707
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:05:27.876
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:06:43.318
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:06:43.655
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:06:45.590
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:06:45.739
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:09:57.064
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:09:57.445
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:09:59.427
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:09:59.567
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:18:31.023
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:18:33.022
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:18:33.194
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:19:56.957
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:19:59.059
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:19:59.209
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 14:23:50.157 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 14:23:51.037
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:23:55.769
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:23:55.769
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:24:09.570
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:24:11.664
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:24:11.834
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 14:32:29.882 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 14:32:30.717
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:32:35.344
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 14:32:35.344
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:41:09.552
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:41:09.567
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:41:37.697
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:41:37.704
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.ui 4 4 2016-05-13 14:41:46.616
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@73971965)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5c937c92)}
+
+!ENTRY org.eclipse.ui 4 4 2016-05-13 14:42:06.971
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@73971965)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@7d24def)}
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:43:08.542
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:43:08.544
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:43:45.179
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:43:47.399
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:43:47.574
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:45:43.723
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:45:44.082
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:45:45.915
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:45:46.075
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:46:31.865
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:46:34.118
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:46:34.290
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:53:11.964
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:53:14.164
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:53:14.337
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:59:26.963
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 14:59:28.915
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 14:59:29.085
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:01:22.659
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:01:24.832
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:01:24.962
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:02:53.383
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:02:53.663
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:02:55.537
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:02:55.704
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:03:37.454
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:03:37.884
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:03:40.107
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:03:40.277
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:04:14.118
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:04:16.321
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:04:16.471
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY org.eclipse.debug.ui 4 120 2016-05-13 15:04:21.276
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:687)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:06:29.219
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:06:29.600
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:06:30.636
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:06:31.322
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:06:31.492
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:06:32.683
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:06:32.842
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:18.389
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:18.395
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:18.762
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@662e689a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@662e689a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43ee5d81,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43ee5d81,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26683409,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26683409,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1ae33b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1ae33b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a6528fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a6528fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b566462,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b566462,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cf9cd7d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cf9cd7d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14e2e4e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14e2e4e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-13 15:07:20.397
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@67332c7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@67332c7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:07:20.557
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:20.692
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:55.037
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:07:57.152
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:07:57.311
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:13:33.631
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:13:35.764
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:13:35.934
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 15:14:34.345 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 15:14:35.191
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:14:39.668
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:14:39.668
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:14:55.238
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:14:57.369
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:14:57.529
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:16:18.781
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:16:19.150
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:16:21.264
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:16:21.425
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:17:24.152
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:17:26.445
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:17:26.595
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:18:47.236
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:18:49.398
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:18:49.565
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:20:32.113
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:20:32.534
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:20:34.547
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:20:34.716
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:20:57.103
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:20:59.005
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:20:59.145
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:23:15.830
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:23:16.223
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:23:18.214
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:23:18.384
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:26:48.859
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:26:49.281
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:26:51.352
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:26:51.522
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 15:37:41.057 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 15:37:41.905
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:37:46.689
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:37:46.689
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:38:16.997
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:38:18.688
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:38:18.851
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:39:14.045
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:39:14.465
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:39:16.757
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:39:16.928
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:40:19.762
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-13 15:40:21.804
+!MESSAGE Failed Executing: [nios2-download, '--cable=', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-13 15:40:21.974
+!MESSAGE Executing: [C:/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/xiaoh3/Desktop/TheFuckingNew/Lab1_files/software/bathysphere_eclipse3/bathysphere_eclipse3.elf]
+!SESSION 2016-05-13 15:41:34.120 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 15:41:34.969
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:41:39.482
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:41:39.482
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-13 15:42:41.422 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:42:45.987
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 15:42:45.992
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xiaoh3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
