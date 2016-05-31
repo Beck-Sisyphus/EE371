@@ -1,0 +1,125 @@
+#! c:/iverilog-x86/bin/vvp
+:ivl_version "10.0 (stable)" "(v10_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_010b5390 .scope module, "BSC_testBench" "BSC_testBench" 2 3;
+ .timescale 0 0;
+v010b3b68_0 .net "clk", 0 0, v010be8f0_0;  1 drivers
+v010bebf8_0 .net "enable", 0 0, v010bea28_0;  1 drivers
+v010bec50_0 .net "reset", 0 0, v02812a98_0;  1 drivers
+v010beca8_0 .net "sr_clk", 0 0, v010b3ab8_0;  1 drivers
+S_010b5460 .scope module, "aTester" "BSC_Tester" 2 12, 2 24 0, S_010b5390;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "reset"
+    .port_info 1 /OUTPUT 1 "enable"
+    .port_info 2 /OUTPUT 1 "clk"
+    .port_info 3 /INPUT 1 "sr_clk"
+P_010bc140 .param/l "stimDelay" 0 2 28, +C4<00000000000000000000000000001010>;
+v010be8f0_0 .var "clk", 0 0;
+v010bea28_0 .var "enable", 0 0;
+v02812a98_0 .var "reset", 0 0;
+v02812af0_0 .net "sr_clk", 0 0, v010b3ab8_0;  alias, 1 drivers
+E_010bc190 .event posedge, v010be8f0_0;
+S_02812b48 .scope module, "bsc" "BSC" 2 9, 3 1 0, S_010b5390;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "reset"
+    .port_info 1 /INPUT 1 "enable"
+    .port_info 2 /INPUT 1 "clk"
+    .port_info 3 /OUTPUT 1 "sr_clk"
+v02812c18_0 .net "clk", 0 0, v010be8f0_0;  alias, 1 drivers
+v010b3a08_0 .net "enable", 0 0, v010bea28_0;  alias, 1 drivers
+v010b3a60_0 .net "reset", 0 0, v02812a98_0;  alias, 1 drivers
+v010b3ab8_0 .var "sr_clk", 0 0;
+v010b3b10_0 .var "state", 3 0;
+    .scope S_02812b48;
+T_0 ;
+    %wait E_010bc190;
+    %load/vec4 v010b3a60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v010b3b10_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v010b3ab8_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v010b3a08_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v010b3b10_0;
+    %addi 1, 0, 4;
+    %assign/vec4 v010b3b10_0, 0;
+    %load/vec4 v010b3b10_0;
+    %cmpi/e 8, 0, 4;
+    %jmp/0xz  T_0.4, 4;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v010b3ab8_0, 0;
+    %jmp T_0.5;
+T_0.4 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v010b3ab8_0, 0;
+T_0.5 ;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v010b3b10_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v010b3ab8_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_010b5460;
+T_1 ;
+    %delay 5, 0;
+    %load/vec4 v010be8f0_0;
+    %inv;
+    %store/vec4 v010be8f0_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_010b5460;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v010be8f0_0, 0, 1;
+    %end;
+    .thread T_2;
+    .scope S_010b5460;
+T_3 ;
+    %wait E_010bc190;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v02812a98_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v02812a98_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v02812a98_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v010bea28_0, 0;
+    %delay 100, 0;
+    %delay 320, 0;
+    %delay 320, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v010bea28_0, 0;
+    %delay 320, 0;
+    %vpi_call 2 53 "$stop" {0 0 0};
+    %vpi_call 2 54 "$finish" {0 0 0};
+    %jmp T_3;
+    .thread T_3;
+    .scope S_010b5390;
+T_4 ;
+    %vpi_call 2 18 "$dumpfile", "BSC.vcd" {0 0 0};
+    %vpi_call 2 19 "$dumpvars", 32'sb00000000000000000000000000000001, S_02812b48 {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "BSC_testBench.v";
+    "./BSC.v";

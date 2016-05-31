@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/pshfls/Downloads/ee371Projects-master/assignment_4/lab4_3/") File("nios2_quartus2_project.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/") File("nios2_quartus2_project.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

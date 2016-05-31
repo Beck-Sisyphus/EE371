@@ -6,20 +6,21 @@ module DE1_SoC (LEDR, KEY, CLOCK_50, GPIO_0, GPIO_1);
   output [9:0] LEDR;
 
   assign LEDR[9:8] = 2'b00;
+  assign GPIO_1 [35:1] = 'bZ;
 
 	wire char_sent, char_received;
 	wire [7:0] data_out;
-  wire [7:0] data_in;
+	wire [7:0] data_in;
 	wire reset;
 	wire transmit_enable, load;
-  reg [31:0] clk;
-  always@(posedge CLOCK_50) begin
-    clk <= clk + 1'b1;
-  end
+	reg [31:0] clk;
+	always@(posedge CLOCK_50) begin
+		clk <= clk + 1'b1;
+	end
 
 	lab4CPU cpu(
 		.clk_clk(CLOCK_50),
-		.reset_reset_n(1),
+		.reset_reset_n(~KEY[0]),
 		.character_recieved_input_external_connection_export(char_received),
 		.character_sent_input_external_connection_export(char_sent),
 		.led_output_external_connection_export(LEDR[7:0]),

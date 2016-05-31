@@ -1,5 +1,5 @@
 Assembler report for nios2_quartus2_project
-Fri May 27 03:12:53 2016
+Fri May 27 18:40:23 2016
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 
 
@@ -11,8 +11,8 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.sof
-  7. Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.ttf
+  6. Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.sof
+  7. Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.ttf
   8. Assembler Messages
 
 
@@ -40,7 +40,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri May 27 03:12:53 2016 ;
+; Assembler Status      ; Successful - Fri May 27 18:40:23 2016 ;
 ; Revision Name         ; nios2_quartus2_project                ;
 ; Top-level Entity Name ; DE1_SoC                               ;
 ; Family                ; Cyclone V                             ;
@@ -65,34 +65,34 @@ agreement for further details.
 +--------+------------------------+--------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Generated Files                                           ;
-+---------------------------------------------------------------------+
-; File Name                                                           ;
-+---------------------------------------------------------------------+
-; C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.sof ;
-; C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.ttf ;
-+---------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.sof ;
+; C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.ttf ;
++------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.sof ;
-+----------------+------------------------------------------------------------------------------+
-; Option         ; Setting                                                                      ;
-+----------------+------------------------------------------------------------------------------+
-; Device         ; 5CSEMA5F31C6                                                                 ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                   ;
-; Checksum       ; 0x0131BD43                                                                   ;
-+----------------+------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                   ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; Device         ; 5CSEMA5F31C6                                                                                                              ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                                ;
+; Checksum       ; 0x0131D680                                                                                                                ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS/nios2_quartus2_project.ttf ;
-+--------------------+--------------------------------------------------------------------------+
-; Option             ; Setting                                                                  ;
-+--------------------+--------------------------------------------------------------------------+
-; Tabular Text File  ;                                                                          ;
-+--------------------+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/pshfls/Desktop/Lab4_Stable_NIOS_transmit_work/Lab4_Stable_NIOS_transmit_work/nios2_quartus2_project.ttf ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                               ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------+
+; Tabular Text File  ;                                                                                                                       ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,13 +101,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
-    Info: Processing started: Fri May 27 03:12:43 2016
+    Info: Processing started: Fri May 27 18:40:10 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off nios2_quartus2_project -c nios2_quartus2_project
 Info (115030): Assembler is generating device programming files
-Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 903 megabytes
-    Info: Processing ended: Fri May 27 03:12:53 2016
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:10
+Warning (12914): The file, C:/Users/pshfls/Downloads/ee371Projects-master/assignment_4/lab4_3/lab4CPU.sopcinfo, is not embedded into sof file as expected.  Some tools, such as System Console, may not function fully.
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 902 megabytes
+    Info: Processing ended: Fri May 27 18:40:24 2016
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:11
 
 
